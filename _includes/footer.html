@@ -1,9 +1,116 @@
-<footer class="bg-gray-100 border-t border-gray-200">
-  <div class="container mx-auto px-4 py-8">
-    <div class="text-center text-gray-600">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}</p>
-      <p class="text-sm mt-2">
-        基于 Jekyll 和 Tailwind CSS 构建
+{% assign current_lang = page.lang | default: 'en' %}
+<footer
+  class="py-12 sm:py-16 bg-surface-alt border-t border-color-border-subtle"
+  role="contentinfo"
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
+      <!-- Contact Information -->
+      <div class="col-span-1">
+        <h3 class="font-display text-lg font-semibold text-text mb-4" data-i18n="footer.get_in_touch">
+          Get in Touch
+        </h3>
+        <div class="space-y-3" role="list">
+          <a
+            href="mailto:{{ site.email }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Send email to {{ site.name[current_lang] }}"
+          >
+            {% include icons/envelope.html class="w-5 h-5 mr-2" %}
+            <span class="text-sm">{{ site.email }}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-span-1">
+        <h3 class="font-display text-lg font-semibold text-text mb-4" data-i18n="footer.connect">
+          Connect
+        </h3>
+        <div class="space-y-3" role="list">
+          <a
+            href="https://github.com/{{ site.github_username }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="GitHub profile of {{ site.name[current_lang] }}"
+          >
+            {% include icons/github.html class="w-5 h-5 mr-2" %}
+            <span class="text-sm" data-i18n="social.github">GitHub</span>
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user={{ site.google_scholar }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Google Scholar profile of {{ site.name[current_lang] }}"
+          >
+            <i class="ai ai-google-scholar text-xl mr-2"></i>
+            <span class="text-sm" data-i18n="social.google_scholar">Google Scholar</span>
+          </a>
+          <a
+            href="https://twitter.com/{{ site.twitter_username }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Twitter profile of {{ site.name[current_lang] }}"
+          >
+            {% include icons/twitter.html class="w-5 h-5 mr-2" %}
+            <span class="text-sm" data-i18n="social.twitter">Twitter</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-span-1 sm:col-span-2 md:col-span-1">
+        <h3 class="font-display text-lg font-semibold text-text mb-4" data-i18n="footer.quick_links">
+          Quick Links
+        </h3>
+        <div class="grid grid-cols-2 gap-3" role="list">
+          <a
+            href="{{ '/' | relative_url }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Home page"
+          >
+            <span class="text-sm" data-i18n="menu.home">Home</span>
+          </a>
+          <a
+            href="{{ '/cv/' | relative_url }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Curriculum vitae"
+          >
+            <span class="text-sm" data-i18n="menu.cv">CV</span>
+          </a>
+          <a
+            href="{{ '/news/' | relative_url }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="News and updates"
+          >
+            <span class="text-sm" data-i18n="menu.news">News</span>
+          </a>
+          <a
+            href="{{ '/blog/' | relative_url }}"
+            class="flex items-center text-text-muted no-underline hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 rounded"
+            aria-label="Blog posts"
+          >
+            <span class="text-sm" data-i18n="menu.blog">Blog</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright and Template Info -->
+    <div
+      class="mt-10 sm:mt-12 pt-8 border-t border-color-border-subtle text-center"
+    >
+      <p class="text-text-muted text-sm" data-i18n="footer.copyright"></p>
+      <p class="text-text-subtle text-xs mt-2">
+        <span data-i18n="footer.built_with">Built with</span>
+        <a
+          href="https://jekyllrb.com/"
+          class="text-text-muted hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2"
+          >Jekyll</a
+        >
+        <span data-i18n="footer.and">and</span>
+        <a
+          href="https://tailwindcss.com/"
+          class="text-text-muted hover:text-text transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2"
+          >Tailwind CSS</a
+        >
       </p>
     </div>
   </div>

@@ -1,0 +1,72 @@
+{% comment %} Button component for consistent button styling Usage: {% include
+components/button.html text="Button Text" href="#" type="primary" icon="file" %}
+Parameters: - text: Button text (required) - href: Link URL (required for anchor
+buttons) - type: Button type (primary, secondary, outline, ghost) - icon: Icon
+name from the icons directory (without .html extension) - class: Additional CSS
+classes - download: Set to true for download buttons - id: Button ID attribute -
+disabled: Set to true for disabled buttons {% endcomment %} {% assign
+button_type = include.type | default: 'primary' %} {% assign button_classes =
+'inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md text-sm
+font-medium transition-all duration-200 focus:outline-none focus:ring-2
+focus:ring-offset-2' %} {% case button_type %} {% when 'primary' %} {% assign
+button_classes = button_classes | append: ' bg-accent-primary text-white
+hover:bg-accent-primary-dark focus:ring-accent-primary' %} {% when 'secondary'
+%} {% assign button_classes = button_classes | append: ' bg-surface-alt
+text-text hover:bg-surface-alt-dark focus:ring-accent-primary' %} {% when
+'outline' %} {% assign button_classes = button_classes | append: '
+bg-transparent border border-color-border text-text hover:bg-surface-alt
+focus:ring-accent-primary' %} {% when 'ghost' %} {% assign button_classes =
+button_classes | append: ' bg-transparent text-text-muted hover:bg-surface-alt
+hover:text-text focus:ring-accent-primary' %} {% endcase %} {% if
+include.disabled %} {% assign button_classes = button_classes | append: '
+opacity-50 cursor-not-allowed' %} {% endif %} {% if include.class %} {% assign
+button_classes = button_classes | append: ' ' | append: include.class %} {%
+endif %} {% if include.href %}
+<a
+  href="{{ include.href }}"
+  class="{{ button_classes }}"
+  {%
+  if
+  include.download
+  %}download{%
+  endif
+  %}
+  {%
+  if
+  include.id
+  %}id="{{ include.id }}"
+  {%
+  endif
+  %}
+  {%
+  if
+  include.disabled
+  %}aria-disabled="true"
+  {%
+  endif
+  %}
+>
+  {% if include.icon %} {% include icons/{{ include.icon }}.html class="w-4 h-4"
+  %} {% endif %} {{ include.text }}
+</a>
+{% else %}
+<button
+  class="{{ button_classes }}"
+  {%
+  if
+  include.id
+  %}id="{{ include.id }}"
+  {%
+  endif
+  %}
+  {%
+  if
+  include.disabled
+  %}disabled{%
+  endif
+  %}
+>
+  {% if include.icon %} {% include icons/{{ include.icon }}.html class="w-4 h-4"
+  %} {% endif %} {{ include.text }}
+</button>
+{% endif %}

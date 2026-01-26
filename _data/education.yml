@@ -1,0 +1,35 @@
+- name:
+    en: Top University
+    zh: 顶尖大学
+  description:
+    en: >-
+      Doctor of Philosophy in Computer Science<br />
+      Thesis: "Advanced Machine Learning for AI Systems"<br />
+      Thesis advisors: Professor A and Professor B<br />
+      University Fellowship recipient • Full tuition + stipend
+    zh: >-
+      计算机科学哲学博士<br />
+      论文："AI系统的高级机器学习"<br />
+      论文导师：A教授和B教授<br />
+      大学奖学金获得者 • 全额学费 + 津贴
+  dates:
+    en: Fall 20XX - Spring 20XX
+    zh: 20XX年秋季 - 20XX年春季
+
+- name:
+    en: Prestigious University
+    zh: 著名大学
+  description:
+    en: >-
+      Bachelor of Science in Computer Science and Engineering<br />
+      Minor in Mathematics<br />
+      Undergraduate Research Scholar<br />
+      GPA: 4.0/4.0 (with honors)
+    zh: >-
+      计算机科学与工程学士学位<br />
+      数学辅修<br />
+      本科生研究学者<br />
+      GPA: 4.0/4.0 (优秀毕业生)
+  dates:
+    en: Fall 20XX - Spring 20XX
+    zh: 20XX年秋季 - 20XX年春季

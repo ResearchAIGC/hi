@@ -1,0 +1,56 @@
+{% assign current_lang = page.lang | default: 'en' %}
+<article
+  class="highlight bg-surface rounded-lg overflow-hidden transition-all duration-300 ease-out"
+>
+  <a
+    href="{{ include.h.url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="block no-underline h-full"
+  >
+    <div class="aspect-square overflow-hidden">
+      {% if include.h.video %}
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+      >
+        <source
+          src="{{ '/images/' | append: include.h.video | relative_url }}"
+          type="video/mp4"
+        />
+        <img
+          src="{{ '/images/' | append: include.h.image | relative_url }}"
+          alt="{{ include.h.title }}"
+          loading="lazy"
+          class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+        />
+      </video>
+      {% else %}
+      <img
+        src="{{ '/images/' | append: include.h.image | relative_url }}"
+        alt="{{ include.h.title }}"
+        loading="lazy"
+        class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+      />
+      {% endif %}
+    </div>
+    <div class="p-6 flex flex-col flex-1 space-y-4">
+      <h3 class="font-display font-semibold text-text text-lg md:text-xl leading-tight" data-translations='{"title": {"en": "{{ include.h.title.en }}", "zh": "{{ include.h.title.zh }}"}}'>
+        {{ include.h.title[current_lang] }}
+        <span class="inline-block w-1.5 h-1.5 bg-accent-primary rounded-full ml-2 mt-1 align-middle opacity-80"></span>
+      </h3>
+      <p class="text-sm md:text-base text-text-muted/90 leading-relaxed flex-1" data-translations='{"description": {"en": "{{ include.h.description.en }}", "zh": "{{ include.h.description.zh }}"}}'>
+        {{ include.h.description[current_lang] }}
+      </p>
+      <span class="inline-flex items-center text-sm text-accent-primary font-medium hover:text-accent-primary/90 transition-all duration-300 mt-2 group" data-i18n="highlight.learn_more">
+        {{ site.data.i18n[current_lang].highlight.learn_more }}
+        <svg class="w-4 h-4 ml-1.5 transform group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </span>
+    </div>
+  </a>
+</article>

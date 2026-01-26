@@ -1,0 +1,143 @@
+# 网站基本信息翻译
+site:
+  title: 你的姓名
+  position: 人工智能研究员
+  description: |
+    我是一名AI研究者，专注于机器学习、计算机视觉和自然语言处理领域。
+    我的研究方向是开发能够更智能地理解和与世界交互的创新AI系统。
+    
+    此前，我曾在领先的科技公司和研究机构工作，参与前沿AI项目的开发。
+
+# Common translations
+common:
+  home: 首页
+  blog: 博客
+  cv: 简历
+  news: 新闻
+  contact: 联系方式
+  about: 关于
+  back: 返回
+  read_more: 阅读更多
+  latest_posts: 最新文章
+  published: 发布于
+  tags: 标签
+  related_posts: 相关文章
+  next_post: 下一篇
+  previous_post: 上一篇
+  all_posts: 所有文章
+  with_collaborators_at: 与以下机构的合作者一起：
+
+# 首页翻译
+home:
+  greeting: 你好，我是{{ site.name }}
+  description: >
+    我是一名AI研究者，专注于机器学习、计算机视觉和自然语言处理领域。
+    我的研究方向是开发能够更智能地理解和与世界交互的创新AI系统。
+    
+    此前，我曾在领先的科技公司和研究机构工作，参与前沿AI项目的开发。
+    我在顶尖大学获得计算机科学博士学位，专注于人工智能领域的研究。
+  title: 欢迎访问我的网站
+  research_focus: 我的研究专注于机器学习、计算机视觉和自然语言处理。
+  recent_work: 我的最新研究成果已在顶级AI会议上发表。
+  previous_experience: 我曾在领先的科技公司和研究机构工作，参与前沿AI项目的开发。
+  education: 我在顶尖大学获得计算机科学博士学位，专注于人工智能领域的研究。
+  view_cv: 查看完整简历
+
+# 简历翻译
+cv:
+  title: 个人简历
+  education: 教育背景
+  work_experience: 工作经历
+  publications: 发表论文
+  skills: 能力
+  technical_skills: 技术技能
+  programming_languages: 编程语言
+  research_areas: 研究领域
+
+# 日期翻译
+date:
+  months:
+    1: 一月
+    2: 二月
+    3: 三月
+    4: 四月
+    5: 五月
+    6: 六月
+    7: 七月
+    8: 八月
+    9: 九月
+    10: 十月
+    11: 十一月
+    12: 十二月
+  skills: 技能
+  technical_skills: 技术技能
+  programming_languages: 编程语言
+  research_areas: 研究领域
+  tools_frameworks: 工具与框架
+  soft_skills: 软技能
+  projects: 项目
+  publications: 发表论文
+  awards: 荣誉奖项
+
+# 博客翻译
+blog:
+  title: 博客
+  search: 搜索
+  archives: 归档
+  category: 分类
+  author: 作者
+  comments: 评论
+  no_posts: 还没有文章，敬请期待！
+
+# 文章翻译
+post:
+  toc: 目录
+  back_to_blog: ← 返回博客
+
+# 新闻翻译
+news:
+  title: 新闻与更新
+  all_news: 所有新闻
+  no_news: 暂无新闻
+
+# 发表论文翻译
+publication:
+  title: 发表论文
+  venue: 发表会议
+  description: 精选研究论文和学术贡献
+  project_page: 项目页面
+  github: GitHub
+  arxiv: arXiv
+  authors: 作者
+  with: 与
+  awards: 荣誉
+  view_all: 查看所有论文
+
+# 亮点项目翻译
+highlight:
+  title: 亮点项目
+  description: 定义我的工作和研究的关键项目和成就
+  view_project: 查看项目
+  learn_more: 了解更多 →
+
+# 页脚翻译
+footer:
+  get_in_touch: 与我联系
+  connect: 社交媒体
+  quick_links: 快速链接
+  copyright: "© {{ site.time | date: '%Y' }} {{ site.name }}. 保留所有权利。"
+  built_with: 使用
+  and: 和
+
+# 社交媒体翻译
+social:
+  github: GitHub
+  google_scholar: Google Scholar
+  twitter: Twitter
+
+# 菜单翻译
+menu:
+  home: 首页
+  cv: 简历
+  news: 新闻
+  blog: 博客

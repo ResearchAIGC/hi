@@ -1,0 +1,138 @@
+- id: neural-world-model
+  title:
+    en: 'Advanced Neural World Model for Autonomous Systems'
+    zh: '自主系统的高级神经世界模型'
+  venue:
+    en: Top AI Conference, 20XX (Oral Presentation)
+    zh: 顶级AI会议, 20XX (口头报告)
+  description:
+    en: 'A novel neural world model that achieves real-time scene understanding and prediction for autonomous systems, significantly outperforming existing methods on benchmark tasks.'
+    zh: '一种新型神经世界模型，实现了自主系统的实时场景理解和预测，在基准任务上显著优于现有方法。'
+  project_page: 'https://example.com/research/neural-world-model'
+  github: yourusername/neural-world-model
+  arxiv: 20XX.XXXX
+  image: portrait.jpg
+  image_mouseover: portrait-0.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'AI Research Lab'
+      zh: '人工智能研究实验室'
+    url: 'https://example.com'
+  awards:
+    - en: 'Best Paper Award'
+      zh: '最佳论文奖'
+    - en: 'Oral Presentation'
+      zh: '口头报告'
+
+- id: multimodal-learning
+  title:
+    en: 'Scalable Contrastive Learning for Multimodal Understanding'
+    zh: '可扩展的多模态理解对比学习框架'
+  venue:
+    en: Top ML Conference, 20XX
+    zh: 顶级机器学习会议, 20XX
+  description:
+    en: 'A scalable framework for contrastive learning across multiple modalities, significantly improving generalization on benchmark datasets.'
+    zh: '一种跨多种模态的可扩展对比学习框架，显著提升了基准数据集上的泛化能力。'
+  project_page: 'https://example.com/research/multimodal-learning'
+  github: yourusername/multimodal-learning
+  arxiv: 20XX.XXXX
+  image: llm-decoder.jpg
+  image_mouseover: llm-decoder.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'Major Tech Company'
+      zh: '大型科技公司'
+    url: 'https://example.com'
+
+- id: phd-thesis
+  title:
+    en: 'Neural World Models for Real-Time Decision Making'
+    zh: '实时决策的神经世界模型'
+  venue:
+    en: PhD Thesis, Top University, 20XX
+    zh: 博士论文，顶级大学，20XX
+  description:
+    en: 'A comprehensive framework for developing neural world models that can predict and plan in dynamic environments with low latency.'
+    zh: '开发神经世界模型的综合框架，能够在动态环境中以低延迟进行预测和规划。'
+  project_page: 'https://yourusername.github.io/thesis'
+  arxiv: 20XX.XXXX
+  image: local-llm-workflow.jpg
+  image_mouseover: local-llm-workflow.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'University Research Lab'
+      zh: '大学研究实验室'
+    url: 'https://example.edu'
+
+- id: multimodal-vision-language
+  title:
+    en: 'Advanced Multimodal Vision-Language Understanding'
+    zh: '高级多模态视觉语言理解'
+  venue:
+    en: arXiv Preprint, 20XX
+    zh: arXiv预印本, 20XX
+  description:
+    en: 'Developed novel multimodal fusion techniques for integrating image and text understanding in AI systems.'
+    zh: '开发了用于AI系统中图像和文本理解集成的新型多模态融合技术。'
+  project_page: 'https://example.com/research/multimodal-vl'
+  arxiv: 20XX.XXXX
+  image: portrait.jpg
+  image_mouseover: portrait-1.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'Major Tech Company'
+      zh: '大型科技公司'
+    url: 'https://example.com'
+
+- id: advanced-rl
+  title:
+    en: 'Advanced Reinforcement Learning for Optimization Problems'
+    zh: '优化问题的高级强化学习'
+  venue:
+    en: Quantum Computing Conference, 20XX
+    zh: 量子计算会议, 20XX
+  description:
+    en: 'An innovative reinforcement learning algorithm that outperforms traditional methods on complex optimization problems.'
+    zh: '一种创新的强化学习算法，在复杂优化问题上优于传统方法。'
+  project_page: 'https://example.com/research/advanced-rl'
+  arxiv: 20XX.XXXX
+  image: portrait.jpg
+  image_mouseover: portrait-2.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'Research Institution'
+      zh: '研究机构'
+    url: 'https://example.com'
+
+- id: robot-navigation
+  title:
+    en: 'Autonomous Robot Navigation with Neural SLAM'
+    zh: '基于神经SLAM的自主机器人导航'
+  venue:
+    en: Robotics Conference, 20XX
+    zh: 机器人学会议, 20XX
+  description:
+    en: 'Developed a neural simultaneous localization and mapping system for autonomous robot navigation in challenging environments.'
+    zh: '开发了一种神经同步定位与地图构建系统，用于复杂环境中的自主机器人导航。'
+  project_page: 'https://example.com/research/robot-navigation'
+  arxiv: 20XX.XXXX
+  image: portrait.jpg
+  image_mouseover: portrait-3.mp4
+  authors:
+    - yourusername
+  with_collaborators:
+    name:
+      en: 'Research Institution'
+      zh: '研究机构'
+    url: 'https://example.com'

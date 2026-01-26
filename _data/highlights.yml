@@ -1,0 +1,65 @@
+- id: advanced-ai-development
+  title:
+    en: 'Advanced AI Model Development'
+    zh: '高级AI模型开发'
+  organization: 'Major Tech Company'
+  date: '20XX'
+  description:
+    en: 'Contributed to the development of cutting-edge AI models, enabling advanced understanding capabilities.'
+    zh: '参与前沿AI模型的开发，实现先进的理解能力。'
+  url: 'https://example.com/research'
+  image: 'local-llm-workflow.jpg'
+  video: 'local-llm-workflow.mp4'
+  tags:
+    - 'LLMs'
+    - 'Multimodal AI'
+    - 'AI Research'
+
+- id: university-fellowship
+  title:
+    en: 'University Graduate Fellowship'
+    zh: '大学研究生奖学金'
+  organization: 'Top University'
+  date: '20XX'
+  description:
+    en: 'Awarded full tuition and stipend for PhD studies in Computer Science.'
+    zh: '获得计算机科学博士全额学费和奖学金。'
+  url: 'https://example.edu'
+  image: 'portrait.jpg'
+  video: 'portrait-0.mp4'
+  tags:
+    - 'University'
+    - 'Graduate Fellowship'
+
+- id: university-honors
+  title:
+    en: 'University Honor Graduate'
+    zh: '大学荣誉毕业生'
+  organization: 'Prestigious University'
+  date: '20XX'
+  description:
+    en: 'Graduated with honors in Computer Science and Engineering.'
+    zh: '以优异成绩获得计算机科学与工程学士学位。'
+  url: 'https://example.edu'
+  image: 'portrait.jpg'
+  video: 'portrait-2.mp4'
+  tags:
+    - 'University'
+    - 'Academic Honors'
+
+- id: ai-initiative-founding
+  title:
+    en: 'Co-founding AI Research Initiative'
+    zh: '联合创立AI研究计划'
+  organization: 'AI Research Lab'
+  date: '20XX'
+  description:
+    en: 'Co-founded research initiative to develop next-generation AI systems.'
+    zh: '联合创立研究计划，致力于开发下一代AI系统。'
+  url: 'https://example.com'
+  image: 'portrait.jpg'
+  video: 'portrait-3.mp4'
+  tags:
+    - 'Startup'
+    - 'AI Research'
+    - 'Leadership'

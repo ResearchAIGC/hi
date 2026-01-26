@@ -1,0 +1,90 @@
+- company:
+    en: AI Research Lab
+    zh: 人工智能研究实验室
+  description:
+    en: Co-founder & Chief Research Officer. Leading the development of next-generation AI systems. Creator of innovative machine learning models for intelligent systems.
+    zh: 联合创始人兼首席研究官。领导下一代AI系统的开发。智能系统创新机器学习模型的创建者。
+  dates:
+    en: '20XX - (current)'
+    zh: '20XX年 - 至今'
+  location:
+    en: Tech Hub, CA
+    zh: 加利福尼亚州，科技中心
+
+- company:
+    en: Major Tech Company A
+    zh: 大型科技公司A
+  description:
+    en: Senior Research Scientist. Led research team in developing advanced AI technologies. Published several papers at top AI conferences.
+    zh: 高级研究科学家。领导研究团队开发先进的AI技术。在顶级AI会议上发表多篇论文。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: Tech City, CA
+    zh: 加利福尼亚州，科技城
+
+- company:
+    en: Major Tech Company B
+    zh: 大型科技公司B
+  description:
+    en: Research Scientist. Contributed to cutting-edge AI models and systems. Developed novel techniques adopted in production systems.
+    zh: 研究科学家。参与前沿AI模型和系统的开发。开发了在生产系统中采用的新型技术。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: Tech City, CA
+    zh: 加利福尼亚州，科技城
+
+- company:
+    en: Major Tech Company B
+    zh: 大型科技公司B
+  description:
+    en: Research Intern. Worked on machine learning improvement and generalization. Co-authored research paper published at top conference.
+    zh: 研究实习生。从事机器学习改进和泛化研究。共同撰写研究论文并在顶级会议上发表。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: Tech City, CA
+    zh: 加利福尼亚州，科技城
+
+- company:
+    en: University Research Lab
+    zh: 大学研究实验室
+  description:
+    en: Graduate Research Assistant. Developed AI models for intelligent systems. Published thesis on advanced machine learning techniques.
+    zh: 研究生研究助理。开发智能系统的AI模型。发表关于高级机器学习技术的论文。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: University Town, CA
+    zh: 加利福尼亚州，大学城
+
+- company:
+    en: Research Institution
+    zh: 研究机构
+  description:
+    en: Undergraduate Research Assistant. Worked on AI systems research. Received undergraduate research award.
+    zh: 本科研究助理。从事AI系统研究。获得本科研究奖。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: Research Town, MA
+    zh: 马萨诸塞州，研究城
+
+- company:
+    en: Technology Company
+    zh: 科技公司
+  description:
+    en: Summer Research Intern. Developed machine learning algorithms for optimization problems. Co-authored research paper.
+    zh: 暑期研究实习生。开发用于优化问题的机器学习算法。共同撰写研究论文。
+  dates:
+    en: '20XX - 20XX'
+    zh: '20XX年 - 20XX年'
+  location:
+    en: Research City, NY
+    zh: 纽约州，研究城

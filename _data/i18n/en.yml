@@ -1,0 +1,143 @@
+# Site translations
+site:
+  title: Your Name
+  position: AI Researcher
+  description: |
+    I am an AI researcher specializing in machine learning, computer vision, and natural language processing.
+    My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
+    
+    Previously, I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
+
+# Common translations
+common:
+  home: Home
+  blog: Blog
+  cv: CV
+  news: News
+  contact: Contact
+  about: About
+  back: Back
+  read_more: Read More
+  latest_posts: Latest Posts
+  published: Published
+  tags: Tags
+  related_posts: Related Posts
+  next_post: Next Post
+  previous_post: Previous Post
+  all_posts: All Posts
+  with_collaborators_at: with collaborators at
+
+# Homepage translations
+home:
+  greeting: Hello, I'm {{ site.name }}
+  description: >
+    I am an AI researcher specializing in machine learning, computer vision, and natural language processing. 
+    My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
+    
+    Previously I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
+    I received my Ph.D in Computer Science from a top university, where I focused on my research interests.
+  title: Welcome to My Website
+  research_focus: My research focuses on machine learning, computer vision, and natural language processing.
+  recent_work: My recent research has been presented at top AI conferences.
+  previous_experience: I have worked at leading tech companies and research institutions on cutting-edge AI projects.
+  education: I received my Ph.D in Computer Science from a top university, specializing in artificial intelligence.
+  view_cv: View Complete CV
+
+# CV translations
+cv:
+  title: Curriculum Vitae
+  education: Education
+  work_experience: Work Experience
+  publications: Publications
+  skills: Skills
+  technical_skills: Technical Skills
+  programming_languages: Programming Languages
+  research_areas: Research Areas
+
+# Date translations
+date:
+  months:
+    1: January
+    2: February
+    3: March
+    4: April
+    5: May
+    6: June
+    7: July
+    8: August
+    9: September
+    10: October
+    11: November
+    12: December
+  skills: Skills
+  technical_skills: Technical Skills
+  programming_languages: Programming Languages
+  research_areas: Research Areas
+  tools_frameworks: Tools & Frameworks
+  soft_skills: Soft Skills
+  projects: Projects
+  publications: Publications
+  awards: Awards
+
+# Blog translations
+blog:
+  title: Blog
+  search: Search
+  archives: Archives
+  category: Category
+  author: Author
+  comments: Comments
+  no_posts: No posts yet. Check back soon!
+
+# Post translations
+post:
+  toc: Table of Contents
+  back_to_blog: ← Back to blog
+
+# News translations
+news:
+  title: News & Updates
+  all_news: All News
+  no_news: No news available
+
+# Publication translations
+publication:
+  title: Publications
+  venue: Venue
+  description: Selected research papers and academic contributions
+  project_page: Project Page
+  github: GitHub
+  arxiv: arXiv
+  authors: Authors
+  with: with
+  awards: Awards
+  view_all: View all publications
+
+# Highlight translations
+highlight:
+  title: Highlights
+  description: Key projects and achievements that define my work and research
+  view_project: View Project
+  learn_more: Learn more →
+
+# Footer translations
+footer:
+  get_in_touch: Get in Touch
+  connect: Social Media
+  quick_links: Quick Links
+  copyright: "© {{ site.time | date: '%Y' }} {{ site.name }}. All rights reserved."
+  built_with: Built with
+  and: and
+
+# Social translations
+social:
+  github: GitHub
+  google_scholar: Google Scholar
+  twitter: Twitter
+
+# Menu translations
+menu:
+  home: Home
+  cv: CV
+  news: News
+  blog: Blog

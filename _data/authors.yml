@@ -1,0 +1,9 @@
+yourusername:
+  first_name:
+    en: Your
+    zh: 你的
+  last_name:
+    en: Name
+    zh: 姓名
+  website: https://yourusername.github.io
+  is_me: true

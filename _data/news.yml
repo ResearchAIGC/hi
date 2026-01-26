@@ -1,0 +1,98 @@
+- date:
+    en: December 2025
+    zh: 2025年12月
+  description:
+    en: >-
+      Global tech leaders announced the [AI Safety Accord](https://aisafetyaccord.org/) at the UN AI Summit, committing to shared safety standards for generative AI systems.
+    zh: >-
+      全球科技领袖在联合国AI峰会上宣布了[AI安全协议](https://aisafetyaccord.org/)，承诺为生成式AI系统制定共同的安全标准。
+
+- date:
+    en: December 2025
+    zh: 2025年12月
+  description:
+    en: >-
+      OASIS integrated with [Google Gemini](https://deepmind.google/technologies/gemini/) for enhanced multimodal reasoning and decision-making in autonomous systems.
+    zh: >-
+      OASIS与[Google Gemini](https://deepmind.google/technologies/gemini/)集成，增强自主系统的多模态推理和决策能力。
+
+- date:
+    en: November 2025
+    zh: 2025年11月
+  description:
+    en: >-
+      OpenAI released [GPT-5](https://openai.com/research/gpt-5), demonstrating unprecedented reasoning capabilities and multimodal integration across text, images, video, and 3D data.
+    zh: >-
+      OpenAI发布[GPT-5](https://openai.com/research/gpt-5)，展示了前所未有的推理能力和跨文本、图像、视频和3D数据的多模态集成。
+
+- date:
+    en: October 2025
+    zh: 2025年10月
+  description:
+    en: >-
+      [Google DeepMind](https://deepmind.google/) announced Gemini Ultra 2, achieving human-level performance on 12 out of 15 professional and academic benchmarks including medicine and law.
+    zh: >-
+      [Google DeepMind](https://deepmind.google/)宣布Gemini Ultra 2，在包括医学和法律在内的15项专业和学术基准测试中有12项达到人类水平的性能。
+
+- date:
+    en: September 2025
+    zh: 2025年9月
+  description:
+    en: >-
+      The European Union implemented [AI Act Phase 1](https://aiact.europa.eu/), establishing the world's first comprehensive regulatory framework for generative AI technologies.
+    zh: >-
+      欧盟实施了[AI法案第一阶段](https://aiact.europa.eu/)，建立了世界上第一个针对生成式AI技术的全面监管框架。
+
+- date:
+    en: August 2025
+    zh: 2025年8月
+  description:
+    en: >-
+      [Tesla AI](https://www.tesla.com/ai) announced Full Self-Driving V12 powered by their new Dojo-2 supercomputer and custom generative world model.
+    zh: >-
+      [Tesla AI](https://www.tesla.com/ai)宣布完全自动驾驶V12，由他们新的Dojo-2超级计算机和定制的生成式世界模型提供支持。
+
+- date:
+    en: August 2025
+    zh: 2025年8月
+  description:
+    en: >-
+      Nexus AI Labs announced [OASIS Enterprise](https://nexusailabs.com/enterprise), bringing neural world models to industrial automation and smart city applications.
+    zh: >-
+      Nexus AI Labs宣布[OASIS Enterprise](https://nexusailabs.com/enterprise)，将神经世界模型引入工业自动化和智慧城市应用。
+
+- date:
+    en: July 2025
+    zh: 2025年7月
+  description:
+    en: >-
+      [Meta AI](https://ai.meta.com/) open-sourced LLaMA 4, a 300B parameter model with state-of-the-art multilingual capabilities and reduced computational requirements.
+    zh: >-
+      [Meta AI](https://ai.meta.com/)开源了LLaMA 4，这是一个拥有300B参数的模型，具有最先进的多语言能力并降低了计算需求。
+
+- date:
+    en: May 2025
+    zh: 2025年5月
+  description:
+    en: >-
+      [Anthropic](https://www.anthropic.com/) released Claude 4, introducing constitutional AI 2.0 with enhanced safety guarantees and 1M token context windows.
+    zh: >-
+      [Anthropic](https://www.anthropic.com/)发布Claude 4，引入了宪法AI 2.0，具有增强的安全保障和1M令牌上下文窗口。
+
+- date:
+    en: February 2025
+    zh: 2025年2月
+  description:
+    en: >-
+      The [United States AI Institute](https://ai.gov/) was established with $50 billion in funding to advance safe and beneficial generative AI research.
+    zh: >-
+      [美国AI研究所](https://ai.gov/)成立，获得500亿美元资金，用于推进安全和有益的生成式AI研究。
+
+- date:
+    en: January 2025
+    zh: 2025年1月
+  description:
+    en: >-
+      [NVIDIA](https://www.nvidia.com/en-us/) announced H100 NVL2 GPUs with 192GB VRAM, enabling unprecedented scale in generative AI model training and inference.
+    zh: >-
+      [NVIDIA](https://www.nvidia.com/en-us/)宣布H100 NVL2 GPU，配备192GB VRAM，实现生成式AI模型训练和推理的前所未有的规模。

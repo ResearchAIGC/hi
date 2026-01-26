@@ -1,0 +1,113 @@
+{% assign current_lang = page.lang | default: 'en' %}
+<div class="flex flex-col md:flex-row gap-6 py-6">
+  <!-- Thumbnail -->
+  <div class="w-full md:w-1/5 flex-shrink-0">
+    <div
+      class="publication-mousecell relative overflow-hidden rounded-lg aspect-square"
+    >
+      <img
+        src="{{ '/images/' | append: include.pub.image | relative_url }}"
+        loading="lazy"
+        alt="{{ include.pub.title }}"
+        class="w-full h-full object-cover"
+      />
+      {% if include.pub.image_mouseover %}
+      <video
+        src="{{ '/images/' | append: include.pub.image_mouseover | relative_url }}"
+        class="absolute inset-0 w-full h-full object-cover hidden"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex-1 space-y-3">
+    <h3 class="font-serif text-xl md:text-2xl font-semibold leading-tight tracking-wide">
+      <a
+        href="{{ include.pub.project_page }}"
+        class="text-text hover:text-accent-primary no-underline transition-colors duration-200"
+      >
+        <span data-translations='{"title": {"en": "{{ include.pub.title.en }}", "zh": "{{ include.pub.title.zh }}"}}'>{{ include.pub.title[current_lang] }}</span>
+      </a>
+    </h3>
+
+    <!-- Authors -->
+    <p class="text-text-body text-sm leading-relaxed tracking-wide">
+      {% for author_id in include.pub.authors %} {% assign author = 
+      site.data.authors[author_id] %} {% if author.is_me %}
+      <span class="font-semibold text-text"
+        data-translations='{"author": {"en": "{{ author.first_name.en }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.en }}", "zh": "{{ author.first_name.zh }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.zh }}"}}'
+        >{{ author.first_name[current_lang] }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name[current_lang] }}</span
+      >{% unless forloop.last %}, {% endunless %} {% elsif author.website %}
+      <a href="{{ author.website }}" class="text-text-body hover:text-accent-primary transition-colors duration-200 border-b border-transparent hover:border-accent-primary/50"
+        data-translations='{"author": {"en": "{{ author.first_name.en }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.en }}", "zh": "{{ author.first_name.zh }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.zh }}"}}'
+        >{{ author.first_name[current_lang] }}{% if author.middle_name %} {{ 
+        author.middle_name }}{% endif %} {{ author.last_name[current_lang] }}</a
+      >{% unless forloop.last %}, {% endunless %} {% else %}
+      <span
+        data-translations='{"author": {"en": "{{ author.first_name.en }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.en }}", "zh": "{{ author.first_name.zh }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name.zh }}"}}'
+        >{{ author.first_name[current_lang] }}{% if author.middle_name %} {{ 
+        author.middle_name }}{% endif %} {{ author.last_name[current_lang] }}</span
+      >{% unless forloop.last %}, {% endunless %} {% endif %} {% endfor %} {% if
+      include.pub.with_collaborators %}
+      <span class="text-text-muted">
+        <span data-i18n="common.with_collaborators_at">{{ site.data.i18n[current_lang].common.with_collaborators_at }}</span>
+        <a
+          href="{{ include.pub.with_collaborators.url }}"
+          class="text-text-body hover:text-accent-primary transition-colors duration-200 border-b border-transparent hover:border-accent-primary/50"
+          data-translations='{"collaborator": {"en": "{{ include.pub.with_collaborators.name.en }}", "zh": "{{ include.pub.with_collaborators.name.zh }}"}}'
+          >{{ include.pub.with_collaborators.name[current_lang] }}</a
+        >
+      </span>
+      {% endif %}
+    </p>
+
+    <!-- Venue & Awards -->
+    <p class="text-text-muted text-sm leading-relaxed tracking-wide">
+      <span data-translations='{"venue": {"en": "{{ include.pub.venue.en }}", "zh": "{{ include.pub.venue.zh }}"}}'>{{ include.pub.venue[current_lang] }}</span>
+      {% for award in include.pub.awards %}
+      <span class="text-accent-primary font-semibold ml-2 px-2 py-0.5 bg-accent-primary/10 rounded text-xs" data-translations='{"award": {"en": "{{ award.en }}", "zh": "{{ award.zh }}"}}'>{{ award[current_lang] }}</span>
+      {% endfor %}
+    </p>
+
+    <!-- Description -->
+    <p class="text-text-body leading-relaxed tracking-wide" data-translations='{"description": {"en": "{{ include.pub.description.en }}", "zh": "{{ include.pub.description.zh }}"}}'>{{ include.pub.description[current_lang] }}</p>
+
+    <!-- Links -->
+    <div class="flex flex-wrap gap-3 mt-2 text-sm">
+      {% if include.pub.project_page %}
+      <a
+        href="{{ include.pub.project_page }}"
+        class="inline-flex items-center px-3 py-1.5 rounded-full bg-surface-alt text-text-body hover:bg-accent-primary hover:text-white transition-all duration-200 no-underline"
+      >
+        {% include icons/globe.html class="w-4 h-4 mr-1.5" %} Project
+      </a>
+      {% endif %} {% if include.pub.arxiv %}
+      <a
+        href="https://arxiv.org/pdf/{{ include.pub.arxiv }}.pdf"
+        class="inline-flex items-center px-3 py-1.5 rounded-full bg-surface-alt text-text-body hover:bg-accent-primary hover:text-white transition-all duration-200 no-underline"
+      >
+        {% include icons/document.html class="w-4 h-4 mr-1.5" %} PDF
+      </a>
+      <a
+        href="https://arxiv.org/abs/{{ include.pub.arxiv }}"
+        class="inline-flex items-center px-3 py-1.5 rounded-full bg-surface-alt text-text-body hover:bg-accent-primary hover:text-white transition-all duration-200 no-underline"
+      >
+        <i class="ai ai-arxiv mr-1.5"></i>
+        arXiv
+      </a>
+      {% endif %} {% if include.pub.github %}
+      <a
+        href="https://github.com/{{ include.pub.github }}"
+        class="inline-flex items-center px-3 py-1.5 rounded-full bg-surface-alt text-text-body hover:bg-accent-primary hover:text-white transition-all duration-200 no-underline"
+      >
+        {% include icons/github.html class="w-4 h-4 mr-1.5" %} Code
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

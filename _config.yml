@@ -1,15 +1,42 @@
-title: My Jekyll Site
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+title:
+  en: Your Name
+  zh: 你的姓名
+name:
+  en: Your Name
+  zh: 你的姓名
+position:
+  en: AI Researcher
+  zh: 人工智能研究员
+email: your.email@example.com
+description: |
+  I am an AI researcher specializing in machine learning, computer vision, and natural language processing. 
+  My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
 
-permalink: /:year/:month/:day/:title/
-timezone: 
+  Previously I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
+  I received my Ph.D in Computer Science from a top university, where I focused on my research interests.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://yourusername.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: yourtwitterusername
+github_username: wulu2026
+google_scholar: YOUR-SCHOLAR-ID
+google_analytics: G-XXXXXXXXXX
 
+# Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Blog settings
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: <!--more-->
+
+defaults:
+  - scope:
+      path: '_posts'
+      type: 'posts'
+    values:
+      layout: 'post'
+      math: false
 
 # Build settings
 exclude:

@@ -1,0 +1,96 @@
+# Technical Skills
+technical:
+  - name:
+      en: Machine Learning & Deep Learning
+      zh: 机器学习与深度学习
+    items:
+      en: PyTorch, TensorFlow, JAX, Scikit-learn, Keras, Hugging Face Transformers
+      zh: PyTorch, TensorFlow, JAX, Scikit-learn, Keras, Hugging Face Transformers
+  - name:
+      en: Computer Vision
+      zh: 计算机视觉
+    items:
+      en: CNNs, Vision Transformers, NeRFs, 3D Scene Understanding, Real-time Rendering
+      zh: CNNs, Vision Transformers, NeRFs, 3D场景理解, 实时渲染
+  - name:
+      en: Natural Language Processing
+      zh: 自然语言处理
+    items:
+      en: LLMs, Multimodal Models, Tokenization, Embeddings, Attention Mechanisms
+      zh: 大语言模型, 多模态模型, 分词, 嵌入, 注意力机制
+  - name:
+      en: Robotics & Autonomous Systems
+      zh: 机器人与自主系统
+    items:
+      en: SLAM, Path Planning, Reinforcement Learning, Robot Operating System (ROS)
+      zh: SLAM, 路径规划, 强化学习, 机器人操作系统 (ROS)
+  - name:
+      en: Quantum Computing
+      zh: 量子计算
+    items:
+      en: Qiskit, Quantum Machine Learning, Quantum Optimization
+      zh: Qiskit, 量子机器学习, 量子优化
+
+# Programming Languages
+languages:
+  - en: Python (expert)
+    zh: Python (专家级)
+  - en: C++ (advanced)
+    zh: C++ (高级)
+  - en: JavaScript/TypeScript (intermediate)
+    zh: JavaScript/TypeScript (中级)
+  - en: Java (intermediate)
+    zh: Java (中级)
+  - en: SQL (intermediate)
+    zh: SQL (中级)
+  - en: MATLAB (basic)
+    zh: MATLAB (基础)
+
+# Research Areas
+research:
+  - en: Neural World Models
+    zh: 神经世界模型
+  - en: Multimodal Learning
+    zh: 多模态学习
+  - en: 3D Scene Understanding
+    zh: 3D场景理解
+  - en: Reinforcement Learning
+    zh: 强化学习
+  - en: Computer Vision
+    zh: 计算机视觉
+  - en: Natural Language Processing
+    zh: 自然语言处理
+
+# Tools & Frameworks
+tools:
+  - en: Git/GitHub
+    zh: Git/GitHub
+  - en: Docker
+    zh: Docker
+  - en: Kubernetes
+    zh: Kubernetes
+  - en: AWS
+    zh: AWS
+  - en: Google Cloud Platform
+    zh: 谷歌云平台
+  - en: CUDA
+    zh: CUDA
+  - en: Jupyter Notebooks
+    zh: Jupyter Notebooks
+  - en: VS Code
+    zh: VS Code
+
+# Soft Skills
+soft:
+  - en: Research Design & Execution
+    zh: 研究设计与执行
+  - en: Technical Writing & Publishing
+    zh: 技术写作与发表
+  - en: Team Leadership & Management
+    zh: 团队领导与管理
+  - en: Public Speaking & Presentation
+    zh: 公共演讲与展示
+  - en: Collaborative Problem Solving
+    zh: 协作解决问题
+  - en: Mentoring & Teaching
+    zh: 指导与教学
