@@ -132,7 +132,6 @@ Deploy the generated `_site` directory to any static hosting provider:
 ## Performance
 ## 性能
 
-- **Image Optimization**: Run `node scripts/optimize-images.js`
 - **CSS Optimization**: Tailwind CSS with JIT compilation
 - **Font Optimization**: Preloaded and asynchronous loading
 
