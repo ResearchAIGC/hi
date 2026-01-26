@@ -1,0 +1,16 @@
+{
+  "name": "jekyll-tailwind",
+  "version": "1.0.0",
+  "description": "Jekyll site with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css",
+    "watch:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
