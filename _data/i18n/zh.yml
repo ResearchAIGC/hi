@@ -29,7 +29,7 @@ common:
 
 # 首页翻译
 home:
-  greeting: 你好，我是{{ site.name }}
+  greeting: 我是{{ site.name }}
   description: >
     我是一位独立研究者，利用免费的互联网资源探索AI领域，主要专注于构建AI代理系统。
     我的研究核心涵盖LLM基础知识、检索增强生成（RAG）、提示工程、代理架构（如ReAct和思维链）、工具集成、内存管理、评估指标以及安全考量。

@@ -29,7 +29,7 @@ common:
 
 # Homepage translations
 home:
-  greeting: Hello, I'm {{ site.name }}
+  greeting: I'm {{ site.name }}
   description: >
     I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
     My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
