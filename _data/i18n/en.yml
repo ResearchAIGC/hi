@@ -3,10 +3,10 @@ site:
   title: Your Name
   position: AI Researcher
   description: |
-    I am an AI researcher specializing in machine learning, computer vision, and natural language processing.
-    My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
+    I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
+    My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
     
-    Previously, I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
+    Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
 
 # Common translations
 common:
@@ -31,11 +31,11 @@ common:
 home:
   greeting: Hello, I'm {{ site.name }}
   description: >
-    I am an AI researcher specializing in machine learning, computer vision, and natural language processing. 
-    My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
+    I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
+    My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
     
-    Previously I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
-    I received my Ph.D in Computer Science from a top university, where I focused on my research interests.
+    Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
+
   title: Welcome to My Website
   research_focus: My research focuses on machine learning, computer vision, and natural language processing.
   recent_work: My recent research has been presented at top AI conferences.

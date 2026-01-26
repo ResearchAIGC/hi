@@ -9,11 +9,9 @@ position:
   zh: 人工智能研究员
 email: your.email@example.com
 description: |
-  I am an AI researcher specializing in machine learning, computer vision, and natural language processing. 
-  My research focuses on developing innovative AI systems that can understand and interact with the world in more intelligent ways.
-
-  Previously I worked at leading tech companies and research institutions, contributing to cutting-edge AI projects.
-  I received my Ph.D in Computer Science from a top university, where I focused on my research interests.
+  I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
+  My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
+  Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://yourusername.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yourtwitterusername
