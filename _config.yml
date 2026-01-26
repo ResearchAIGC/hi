@@ -7,16 +7,16 @@ name:
 position:
   en: AI Researcher
   zh: 人工智能研究员
-email: your.email@example.com
+email: loi.ng@5loi.com
 description: |
   I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
   My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
   Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://yourusername.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://hi.5loi.com' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yourtwitterusername
-github_username: wulu2026
-google_scholar: YOUR-SCHOLAR-ID
+github_username: ResearchAIGC
+my_scholar: D02860731
 google_analytics: G-XXXXXXXXXX
 
 # Build settings

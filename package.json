@@ -1,14 +1,23 @@
 {
-  "name": "jekyll-tailwind",
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/package.json",
+  "name": "hi-5loi-jekyll-tailwind",
   "version": "1.0.0",
-  "description": "Jekyll site with Tailwind CSS",
-  "main": "index.js",
+  "description": "Personal website of wulu2026, showcasing research and projects in Artificial Intelligence",
+  "main": "index.html",
   "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
     "build:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css",
     "watch:css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "jekyll",
+    "tailwindcss",
+    "personal-website",
+    "ai",
+    "research"
+  ],
+  "author": "wulutech",
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",

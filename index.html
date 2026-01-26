@@ -50,7 +50,7 @@ title: Your Name
           </h1>
           <div class="flex items-center gap-3">
             <span class="w-20 h-0.5 bg-accent-primary"></span>
-            <p class="text-text-muted text-lg md:text-xl font-medium whitespace-nowrap">
+            <p class="text-text-muted text-lg md:text-xl font-medium whitespace-nowrap" data-translations='{"position": {"en": "{{ site.position.en }}", "zh": "{{ site.position.zh }}"}}'>
               {{ site.position[current_lang] }}
             </p>
           </div>
@@ -75,7 +75,7 @@ title: Your Name
 
           <div class="flex gap-3">
             <a
-              href="https://scholar.google.com/citations?user={{ site.google_scholar }}"
+              href="https://d.wanfangdata.com.cn/thesis/{{ site.my_scholar }}"
               class="inline-flex items-center justify-center w-12 h-12 bg-white border border-border rounded-full shadow-md hover:bg-surface-alt hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
               aria-label="Google Scholar"
             >
