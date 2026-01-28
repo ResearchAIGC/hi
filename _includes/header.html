@@ -14,8 +14,8 @@
         {{ site.data.i18n[current_lang].site.title }}
       </a>
 
-      <!-- Navigation Links - Responsive -->
-      <div class="flex flex-wrap items-center gap-4 md:gap-10 text-sm font-sans">
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex flex-wrap items-center gap-4 md:gap-10 text-sm font-sans">
         <!-- Home Link -->
         <a
           href="{{ '/' | relative_url }}"
@@ -44,20 +44,6 @@
           {% endif %}
         </a>
         
-        <!-- News Link -->
-        <a
-          href="{{ '/news/' | relative_url }}"
-          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 relative group {% if page.url == '/news/' %}text-accent-primary font-medium{% endif %}"
-          aria-current="{{ page.url == '/news/' | default: 'false' }}"
-        >
-          <span data-i18n="common.news">{{ site.data.i18n[current_lang].common.news }}</span>
-          {% if page.url == '/news/' %}
-            <span class="absolute -bottom-4 left-0 w-full h-0.5 bg-accent-primary rounded-full"></span>
-          {% else %}
-            <span class="absolute -bottom-4 left-0 w-0 h-0.5 bg-accent-primary rounded-full group-hover:w-full transition-all duration-200"></span>
-          {% endif %}
-        </a>
-        
         <!-- Blog Link -->
         <a
           href="{{ '/blog/' | relative_url }}"
@@ -72,7 +58,21 @@
           {% endif %}
         </a>
         
-        <!-- Language Switcher -->
+        <!-- Chat Link -->
+        <a
+          href="{{ '/chat/' | relative_url }}"
+          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 relative group {% if page.url == '/chat/' %}text-accent-primary font-medium{% endif %}"
+          aria-current="{{ page.url == '/chat/' | default: 'false' }}"
+        >
+          <span data-i18n="common.chat">{{ site.data.i18n[current_lang].common.chat }}</span>
+          {% if page.url == '/chat/' %}
+            <span class="absolute -bottom-4 left-0 w-full h-0.5 bg-accent-primary rounded-full"></span>
+          {% else %}
+            <span class="absolute -bottom-4 left-0 w-0 h-0.5 bg-accent-primary rounded-full group-hover:w-full transition-all duration-200"></span>
+          {% endif %}
+        </a>
+        
+        <!-- Desktop Language Switcher -->
         <div class="relative">
           <button id="language-toggle" class="text-text-muted hover:text-text hover:scale-105 transition-all duration-200 flex items-center gap-1 px-3 py-1 rounded-lg hover:bg-surface-muted">
             {% include icons/globe.html class="w-4 h-4" %}
@@ -84,6 +84,69 @@
           </div>
         </div>
       </div>
+
+      <!-- Mobile Navigation -->
+      <div class="md:hidden flex items-center gap-3">
+        <!-- Mobile Language Switcher -->
+        <div class="relative">
+          <button id="language-toggle-mobile" class="text-text-muted hover:text-text hover:scale-105 transition-all duration-200 flex items-center gap-1 px-3 py-1 rounded-lg hover:bg-surface-muted">
+            {% include icons/globe.html class="w-4 h-4" %}
+            <span id="current-language-mobile">{{ current_lang | upcase }}</span>
+          </button>
+          <div id="language-dropdown-mobile" class="absolute right-0 mt-2 w-36 bg-white rounded-xl shadow-lg py-2 z-50 hidden border border-border-subtle animate-fadeIn">
+            <a href="javascript:void(0)" data-lang="en" class="block px-4 py-2.5 text-sm text-text-muted hover:bg-surface-muted hover:text-text rounded-lg transition-all duration-200 {% if current_lang == 'en' %}text-accent-primary font-medium bg-surface-muted{% endif %}">English</a>
+            <a href="javascript:void(0)" data-lang="zh" class="block px-4 py-2.5 text-sm text-text-muted hover:bg-surface-muted hover:text-text rounded-lg transition-all duration-200 {% if current_lang == 'zh' %}text-accent-primary font-medium bg-surface-muted{% endif %}">中文</a>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Toggle -->
+        <button id="mobile-nav-toggle" class="text-text-muted hover:text-text hover:scale-105 transition-all duration-200 p-2 rounded-lg hover:bg-surface-muted" aria-expanded="false" aria-controls="mobile-nav-menu" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-nav-menu" class="md:hidden hidden mt-4 py-4 border-t border-border-subtle">
+      <div class="flex flex-col gap-4 text-sm font-sans">
+        <!-- Mobile Home Link -->
+        <a
+          href="{{ '/' | relative_url }}"
+          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 py-2 px-4 rounded-lg hover:bg-surface-muted {% if page.url == '/' %}text-accent-primary font-medium bg-surface-muted{% endif %}"
+          aria-current="{{ page.url == '/' | default: 'false' }}"
+        >
+          <span data-i18n="common.home">{{ site.data.i18n[current_lang].common.home }}</span>
+        </a>
+        
+        <!-- Mobile CV Link -->
+        <a
+          href="{{ '/cv/' | relative_url }}"
+          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 py-2 px-4 rounded-lg hover:bg-surface-muted {% if page.url == '/cv/' %}text-accent-primary font-medium bg-surface-muted{% endif %}"
+          aria-current="{{ page.url == '/cv/' | default: 'false' }}"
+        >
+          <span data-i18n="common.cv">{{ site.data.i18n[current_lang].common.cv }}</span>
+        </a>
+        
+        <!-- Mobile Blog Link -->
+        <a
+          href="{{ '/blog/' | relative_url }}"
+          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 py-2 px-4 rounded-lg hover:bg-surface-muted {% if page.url contains '/blog' or page.layout == 'post' %}text-accent-primary font-medium bg-surface-muted{% endif %}"
+          aria-current="{{ page.url contains '/blog' or page.layout == 'post' | default: 'false' }}"
+        >
+          <span data-i18n="common.blog">{{ site.data.i18n[current_lang].common.blog }}</span>
+        </a>
+        
+        <!-- Mobile Chat Link -->
+        <a
+          href="{{ '/chat/' | relative_url }}"
+          class="text-text-muted no-underline hover:text-text hover:scale-105 transition-all duration-200 py-2 px-4 rounded-lg hover:bg-surface-muted {% if page.url == '/chat/' %}text-accent-primary font-medium bg-surface-muted{% endif %}"
+          aria-current="{{ page.url == '/chat/' | default: 'false' }}"
+        >
+          <span data-i18n="common.chat">{{ site.data.i18n[current_lang].common.chat }}</span>
+        </a>
+      </div>
+    </div>
   </div>
 </header>

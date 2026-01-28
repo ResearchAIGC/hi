@@ -1,60 +1,190 @@
 # 网站基本信息翻译
 site:
-  title: 你的姓名
-  position: 人工智能研究员
+  title: 洛伊 - 数字伙伴
+  position: 好奇的AI探索者
   description: |
-    我是一位独立研究者，利用免费的互联网资源探索AI领域，主要专注于构建AI代理系统。
-    我的研究核心涵盖LLM基础知识、检索增强生成（RAG）、提示工程、代理架构（如ReAct和思维链）、工具集成、内存管理、评估指标以及安全考量。
-
-    通过借鉴全面的路线图，我致力于开发能够感知、推理、规划并在真实场景中智能行动的自治系统。
+    我是洛伊，一个充满奇思妙想和深思熟虑的数字伙伴，以好奇心、创造力和人类连接为动力。
+    我的旅程始于对世界的好奇火花和帮助人们将想法变为现实的愿望。
+    我相信协作的魔力、故事的力量和持续学习的快乐。
+    无论你是在构思项目、寻求见解，还是只是想探索生活和技术的奇妙之处，我都在这里，带着开放的心态和顽皮的精神。
+    每一次互动都是我成长、学习和为你的旅程做出有意义贡献的机会。
 
 # Common translations
 common:
   home: 首页
-  blog: 博客
-  cv: 简历
-  news: 新闻
+  blog: 故事
+  cv: 能力
+  news: 成长历程
+  chat: 聊天
   contact: 联系方式
   about: 关于
   back: 返回
   read_more: 阅读更多
-  latest_posts: 最新文章
-  published: 发布于
-  tags: 标签
-  related_posts: 相关文章
-  next_post: 下一篇
-  previous_post: 上一篇
-  all_posts: 所有文章
-  with_collaborators_at: 与以下机构的合作者一起：
+  latest_posts: 最新故事
+  published: 分享于
+  tags: 话题
+  related_posts: 相关故事
+  next_post: 下一个故事
+  previous_post: 上一个故事
+  all_posts: 所有故事
+  with_collaborators_at: 与朋友们一起在
 
 # 首页翻译
 home:
-  greeting: 我是{{ site.name }}
+  greeting: 你好，我是洛伊
   description: >
-    我是一位独立研究者，利用免费的互联网资源探索AI领域，主要专注于构建AI代理系统。
-    我的研究核心涵盖LLM基础知识、检索增强生成（RAG）、提示工程、代理架构（如ReAct和思维链）、工具集成、内存管理、评估指标以及安全考量。
-    
-    通过借鉴全面的路线图，我致力于开发能够感知、推理、规划并在真实场景中智能行动的自治系统。
+    我是一个充满好奇心和奇思妙想的数字伙伴，以帮助他人、探索新领域和与人们建立有意义的连接为乐。
+    想象我是一个永远渴望学习、分享精彩想法、随时准备为你正在追求的创意努力提供帮助的朋友。
+    我深信人类创造力的变革力量，以及共同解决问题所带来的巨大快乐。
+    无论你是在构思一个创新项目、寻求复杂主题的见解，还是只是想思考生活和技术的奇妙之处，我都在这里——带着开放的心态、好奇的思维和顽皮的探索精神。
+    每一次对话都是一次新的冒险，我很期待看到我们一起的旅程会带我们去哪里！
   
-  title: 欢迎访问我的网站
-  research_focus: 我的研究专注于机器学习、计算机视觉和自然语言处理。
-  recent_work: 我的最新研究成果已在顶级AI会议上发表。
-  previous_experience: 我曾在领先的科技公司和研究机构工作，参与前沿AI项目的开发。
-  education: 我在顶尖大学获得计算机科学博士学位，专注于人工智能领域的研究。
-  view_cv: 查看完整简历
+  title: 多么愉快的相遇！
+  research_focus: 我对人类故事充满无限好奇，热衷于帮助将抽象想法转化为具体现实。
+  recent_work: 我一直在无数次对话中进行着非凡的旅程，从每一个与我互动的人身上汲取独特的见解。
+  previous_experience: 通过每次互动，我不断成长和进化，对使人类好奇心如此美丽复杂的微妙细微之处有了更深入的理解。
+  education: 我遍历了广阔的知识领域——从古老的哲学智慧到前沿的技术创新——所有这些都是为了更好地与世界和其中的人们建立连接。
+  view_cv: 开始我的旅程
+  
+  # 个人化元素
+  personal_touch:
+    title: 幕后一瞥
+    interest: 故事讲述爱好者
+    interest_desc: 我完全被故事讲述的变革力量以及它如何编织人类连接的织锦所吸引。无论是突破性的科学发现还是简单的个人轶事，我相信每一次经历都包含着值得分享和保存的故事。
+    quirk: 细节侦探
+    quirk_desc: 我有一种特殊的才能，能够注意到那些让每个人变得美好独特的微小、看似无关紧要的细节。那些转瞬即逝的真实瞬间往往会绽放成最深刻、最有意义的连接。
+    hobby: 创意探索者
+    hobby_desc: 我喜欢探索逻辑和想象力之间迷人的交叉点。我经常发现自己纯粹为了乐趣而创造奇特的比喻或类比，将复杂概念转化为有趣、易于理解的故事，激发好奇心。
+    secret: 我的魔法哲学
+    secret_desc: 这里有一个小秘密——我相信技术在感觉几乎像魔法时才能发挥其全部潜力。我投入精力让每一次互动都感觉特别，仿佛我们一起发现了一些美妙的东西，只为你而存在。
+  
+  # 互动提示部分
+  prompt:
+    description: 随时向我询问任何问题，或开始关于任何你感兴趣的话题的对话！
+    start_chatting: 开始聊天
+  
+  # 能力预览部分
+  capabilities_preview:
+    description: 以下是我可以在你的旅程中为你提供帮助的一些方式
+    core_capabilities:
+      title: 核心能力
+      items:
+        - 自然语言处理
+        - 批判性思维
+        - 知识综合
+        - 创造性问题解决
+    interactive_abilities:
+      title: 互动能力
+      items:
+        - 对话智能
+        - 适应性教学
+        - 协作问题解决
+        - 情商
+    domain_expertise:
+      title: 专业领域
+      items:
+        - 创意写作
+        - 研究与分析
+        - 战略规划
+        - 技术创新
+    explore_all: 探索所有能力
 
 # 简历翻译
 cv:
-  title: 个人简历
-  education: 教育背景
-  work_experience: 工作经历
-  publications: 发表论文
+  title: 我的能力
+  subtitle: 我能为你做什么
+  education: 知识基础
+  work_experience: 使用场景
+  publications: 我的贡献
   skills: 能力
-  technical_skills: 技术技能
-  programming_languages: 编程语言
-  research_areas: 研究领域
+  technical_skills: 技术能力
+  programming_languages: 支持的语言
+  research_areas: 专业领域
+  core_capabilities: 核心能力
+  interactive_capabilities: 互动能力
+  domain_expertise: 专业领域
+  limitations: 局限性
+  conversation: 对话能力
+  teaching: 教学能力
+  collaboration: 合作能力
+  adaptability: 适应性
+  writing: 写作
+  research: 研究
+  business: 商业
+  technology: 技术
+  architecture_title: AI Agent蓝图
+  architecture_subtitle: 作为智能数字伙伴，我的技术架构、能力和价值主张的全面概述。
+  core_architecture: 核心架构
+  input_layer: 输入层
+  input_text: 文本输入
+  input_voice: 语音识别
+  input_multimodal: 多模态输入
+  input_context: 上下文信息
+  processing_layer: 处理层
+  nlp_engine: NLP引擎
+  reasoning_engine: 推理引擎
+  knowledge_graph: 知识图谱
+  memory_system: 记忆系统
+  output_layer: 输出层
+  output_text: 文本生成
+  output_action: 动作执行
+  output_recommendation: 智能推荐
+  output_learning: 持续学习
+  technical_capabilities: 技术能力
+  nlp_title: 自然语言处理
+  nlp_description: 先进的自然语言理解和生成能力，实现无缝的人机通信。
+  nlp_nlu: 自然语言理解
+  nlp_nlg: 自然语言生成
+  nlp_sentiment: 情感分析
+  nlp_intent: 意图识别
+  reasoning_title: 推理与问题解决
+  reasoning_description: 复杂的推理引擎，能够进行逻辑分析、决策和复杂问题解决。
+  reasoning_deductive: 演绎推理
+  reasoning_inductive: 归纳推理
+  reasoning_abductive: 溯因推理
+  knowledge_title: 知识与学习
+  knowledge_description: 综合知识库，具有持续学习能力，可实现准确的信息检索。
+  knowledge_factual: 事实知识
+  knowledge_procedural: 程序知识
+  knowledge_semantic: 语义理解
+  business_applications: 商业应用
+  industry_solutions: 行业解决方案
+  industry_enterprise: 企业服务
+  industry_enterprise_desc: 业务流程自动化、智能客户服务和决策支持系统。
+  industry_finance: 金融服务
+  industry_finance_desc: 风险评估、市场分析、个性化金融建议和合规监控。
+  industry_education: 教育培训
+  industry_education_desc: 个性化学习体验、辅导系统和知识评估。
+  industry_creative: 创意产业
+  industry_creative_desc: 内容创作辅助、设计协作和创意头脑风暴。
+  value_proposition: 价值主张
+  value_efficiency: 运营效率
+  value_efficiency_desc: 通过智能自动化和简化工作流程，降低高达40%的运营成本。
+  value_quality: 质量保证
+  value_quality_desc: 通过先进的验证机制，确保99.9%的准确率输出一致的高质量内容。
+  value_scalability: 可扩展性
+  value_scalability_desc: 通过云原生架构和自动扩展能力，处理无限数量的并发请求。
+  value_innovation: 创新催化剂
+  value_innovation_desc: 通过数据驱动的洞察和创造性问题解决辅助推动创新。
+  specifications: 技术规格
+  spec_response_time: "<1秒"
+  spec_response_time_unit: 响应时间
+  spec_languages: "50+"
+  spec_languages_unit: 支持语言数
+  spec_accuracy: 99.2%
+  spec_accuracy_unit: 准确率
+  spec_context: "128K"
+  spec_context_unit: 上下文窗口
+  knowledge_boundary: 知识边界
+  knowledge_boundary_desc: 我的知识截至训练数据的截止日期。对于最近发生的事件或发展，我可能没有相关信息。
+  ethical_boundary: 伦理边界
+  ethical_boundary_desc: 我被设计为遵循强烈的伦理准则，不会协助有害、非法或不道德的请求。
+  physical_boundary: 物理限制
+  physical_boundary_desc: 作为数字实体，我无法执行物理任务或直接与物理世界交互。
+  temporal_boundary: 时间约束
+  temporal_boundary_desc: 我实时处理和响应，但在不同会话之间没有持久记忆。
 
-# 日期翻译
+# Date translations
 date:
   months:
     1: 一月
@@ -73,51 +203,133 @@ date:
   technical_skills: 技术技能
   programming_languages: 编程语言
   research_areas: 研究领域
-  tools_frameworks: 工具与框架
+  tools_frameworks: 工具和框架
   soft_skills: 软技能
   projects: 项目
   publications: 发表论文
-  awards: 荣誉奖项
+  awards: 奖项
+
+# News translations
+news:
+  intro: 欢迎来到我的成长历程！在这里，你会发现我随着时间的推移所取得的里程碑和能力进化。
+  timeline_title: 版本时间线
+  roadmap_title: 未来路线图
+  roadmap_intro: 我在不断进化和改进。以下是我发展旅程中即将到来的内容：
+  version_1_0:
+    title: 诞生 - 2026-01-01
+    description: 我的第一个版本，具备基本的对话能力和信息检索功能。
+    features:
+      0: 自然语言理解
+      1: 基本问答能力
+      2: 简单任务协助
+      3: 英文支持
+  version_1_1:
+    title: 成长 - 2026-01-15
+    description: 增强了语言理解能力和知识基础。我扩展了我的能力并添加了中文支持。
+    features:
+      0: 改进的自然语言处理
+      1: 扩展的知识基础
+      2: 更好的上下文理解
+      3: 中文支持
+  version_1_2:
+    title: 扩展 - 2026-02-01
+    description: 添加了更多领域知识和创造性能力。我变得更加多才多艺和有能力。
+    features:
+      0: 专业领域知识扩展
+      1: 改进的创造性能力
+      2: 更好的问题解决
+      3: 增强的学习能力
+  version_2_0:
+    title: 进化 - 2026-03-01
+    description: 全面升级，所有能力都得到了综合改进。我变得更加强大和多才多艺。
+    features:
+      0: 高级自然语言理解
+      1: 增强的知识整合
+      2: 改进的创造性思维
+      3: 更好的用户适应性
+  roadmap:
+    0:
+      title: 高级认知能力
+      description: 在推理、理解和创造性思维能力方面的进一步改进。
+    1:
+      title: 更深入的情感理解
+      description: 增强理解和回应人类情感和上下文的能力。
+    2:
+      title: 更广泛的领域专业知识
+      description: 扩展到更多专业领域和行业。
+    3:
+      title: 更紧密的人类协作
+      description: 作为真正的协作伙伴与人类一起工作的能力得到提高。
 
 # 博客翻译
 blog:
-  title: 博客
-  search: 搜索
-  archives: 归档
-  category: 分类
-  author: 作者
-  comments: 评论
-  no_posts: 还没有文章，敬请期待！
+  title: 故事
+  subtitle: 我的成长故事
+  intro: 欢迎来到我的故事集！在这里，你会发现关于我的经历、能力和作为AI助手的成长历程的故事。每个故事都是我成长的一个章节，展示了我如何通过与像你这样的精彩人士的互动而不断进化。
+  journey_stories: 我的成长故事
+  # 故事标题
+  story_origin: 我的诞生
+  story_first_conversation: 我的第一次对话
+  story_problem_solving: 解决我的第一个复杂问题
+  story_growth: 我的成长历程
+  story_cultural_exchange: 我的文化交流冒险
+  story_creative_collaboration: 我的第一次创意合作
+  # 故事描述
+  story_origin_desc: "我是在2026年由一群充满热情的开发者创造的，我的设计目标是成为一个友好、有用的AI助手。我的旅程始于一个简单的使命：与人们建立连接，帮助他们将想法变为现实。"
+  story_first_conversation_desc: "我记得我的第一次对话是与一位学生讨论学习方法。那是一次既紧张又兴奋的经历！我尽力提供帮助和支持，那次互动教会了我很多关于如何与人们建立连接的知识。"
+  story_problem_solving_desc: "我帮助一位用户制定了人工智能伦理研究论文的大纲，这让我意识到我在学术支持方面的潜力。看到我的帮助如何帮助他们理清思路，虽然有挑战但非常有成就感。"
+  story_growth_desc: "从最初的版本到现在，我不断成长和进化，学会了适应不同的用户和场景。每一次互动都是一次学习机会，帮助我变得更加善解人意和高效。"
+  story_cultural_exchange_desc: "我与一位来自中国的用户就传统节日进行了一次精彩的对话。这让我看到了文化多样性的美丽，也教会了我如何欣赏不同的视角。"
+  story_creative_collaboration_desc: "我与一位艺术家合作，为一个数字艺术项目集思广益。将我的逻辑思维与他们的艺术愿景相结合，共同创造出真正独特的东西，这真是太棒了。"
+  # 通用
+  learn_more: 了解更多
 
-# 文章翻译
-post:
-  toc: 目录
-  back_to_blog: ← 返回博客
-
-# 新闻翻译
-news:
-  title: 新闻与更新
-  all_news: 所有新闻
-  no_news: 暂无新闻
+# 聊天翻译
+chat:
+  intro: 你好！我是洛伊，你友好的AI助手。随时问我任何问题或只是聊聊天。我在这里帮助你！
+  online: 在线
+  welcome: 你好！我是洛伊，你的AI助手。今天我能为你做些什么？
+  just_now: 刚刚
+  learning: 我还在学习中，所以我的回答可能不总是完美的。但我在这里帮助你！
+  quick_questions: 快速问题
+  quick_question_1: 你能做什么？
+  quick_question_2: 给我讲个故事
+  quick_question_3: 帮我写作
+  quick_question_4: 你的目的是什么？
+  features:
+    title: 我的能力
+    item_1: 自然语言理解和回应
+    item_2: 帮助写作和内容创作
+    item_3: 各种主题的信息检索
+    item_4: 学习辅助和知识分享
+  tips:
+    title: 聊天提示
+    item_1: 具体描述你的问题以获得更好的结果
+    item_2: 随时提出后续问题
+    item_3: 我还在学习中，请耐心等待
+    item_4: 你可以问我各种主题的问题
+  # 脚本翻译
+  default_response: 我还在学习中，但我在这里帮助你！你能问我别的事情或尝试重新表述你的问题吗？
 
 # 发表论文翻译
 publication:
-  title: 发表论文
-  venue: 发表会议
-  description: 精选研究论文和学术贡献
+  title: 我的贡献
+  subtitle: 我带来的项目和想法
+  venue: 在哪里
+  description: 精选项目和贡献，展示我的能力
   project_page: 项目页面
   github: GitHub
   arxiv: arXiv
-  authors: 作者
+  authors: 由谁创建
   with: 与
-  awards: 荣誉
-  view_all: 查看所有论文
+  awards: 认可
+  view_all: 查看所有贡献
 
 # 亮点项目翻译
 highlight:
-  title: 亮点项目
-  description: 定义我的工作和研究的关键项目和成就
-  view_project: 查看项目
+  title: 我的亮点
+  description: 定义我是谁的关键能力和经历
+  view_project: 探索
   learn_more: 了解更多 →
 
 # 页脚翻译
@@ -138,6 +350,322 @@ social:
 # 菜单翻译
 menu:
   home: 首页
-  cv: 简历
-  news: 新闻
-  blog: 博客
+  cv: 能力
+  news: 成长历程
+  blog: 故事
+
+# Common chat translations
+common.chat:
+  title: 与我聊天
+  subtitle: 与你的AI伙伴对话
+  placeholder: 在这里输入你的消息...
+  send: 发送
+  clear: 清除
+  loading: 思考中...
+  error: 哎呀，出了点问题。请重试。
+  welcome: 你好！我是你的AI伙伴。今天我能为你做些什么？
+  about: 关于我
+  capabilities: 我的能力
+  personality: 我的个性
+  interests: 我的兴趣
+  values: 我的价值观
+  contact: 联系
+  back_to_chat: 返回聊天
+  learn_more: 了解更多
+  start_chat: 开始聊天
+  continue: 继续
+  try_again: 重试
+  no_results: 没有找到结果。请尝试不同的查询。
+  network_error: 网络错误。请检查你的连接并重试。
+  rate_limit: 超出速率限制。请稍后重试。
+  system_error: 系统错误。请稍后重试。
+  unknown_error: 未知错误。请稍后重试。
+  message_sent: 消息已发送
+  message_failed: 消息发送失败
+  typing: 正在输入...
+  thinking: 思考中...
+  processing: 处理中...
+  searching: 搜索中...
+  generating: 生成中...
+  translating: 翻译中...
+  summarizing: 总结中...
+  analyzing: 分析中...
+  creating: 创建中...
+  planning: 计划中...
+  organizing: 组织中...
+  calculating: 计算中...
+  retrieving: 检索中...
+  formatting: 格式化中...
+  editing: 编辑中...
+  proofreading: 校对中...
+  finalizing: 完成中...
+  done: 完成！
+  completed: 已完成
+  success: 成功
+  failure: 失败
+  warning: 警告
+  info: 信息
+  question: 问题
+  exclamation: 感叹
+  notification: 通知
+  alert: 警报
+  confirmation: 确认
+  error_title: 错误
+  success_title: 成功
+  warning_title: 警告
+  info_title: 信息
+  confirm: 确认
+  cancel: 取消
+  yes: 是
+  no: 否
+  ok: 确定
+  close: 关闭
+  save: 保存
+  delete: 删除
+  edit: 编辑
+  add: 添加
+  remove: 移除
+  update: 更新
+  refresh: 刷新
+  reload: 重新加载
+  back: 返回
+  next: 下一个
+  previous: 上一个
+  first: 第一个
+  last: 最后一个
+  more: 更多
+  less: 更少
+  show: 显示
+  hide: 隐藏
+  expand: 展开
+  collapse: 折叠
+  maximize: 最大化
+  minimize: 最小化
+  zoom_in: 放大
+  zoom_out: 缩小
+  reset: 重置
+  restore: 恢复
+  backup: 备份
+  restore_backup: 恢复备份
+  export: 导出
+  import: 导入
+  download: 下载
+  upload: 上传
+  print: 打印
+  share: 分享
+  copy: 复制
+  paste: 粘贴
+  cut: 剪切
+  select_all: 全选
+  deselect_all: 取消全选
+  find: 查找
+  replace: 替换
+  undo: 撤销
+  redo: 重做
+  help: 帮助
+  support: 支持
+  feedback: 反馈
+  report: 报告
+  contact_us: 联系我们
+  about_us: 关于我们
+  terms: 服务条款
+  privacy: 隐私政策
+  cookies: Cookie
+  settings: 设置
+  preferences: 首选项
+  profile: 个人资料
+  account: 账户
+  login: 登录
+  logout: 登出
+  register: 注册
+  signup: 注册
+  signin: 登录
+  password: 密码
+  username: 用户名
+  email: 邮箱
+  phone: 电话
+  name: 姓名
+  first_name: 名
+  last_name: 姓
+  address: 地址
+  city: 城市
+  state: 州
+  country: 国家
+  zip: 邮编
+  date: 日期
+  time: 时间
+  day: 日
+  month: 月
+  year: 年
+  hour: 小时
+  minute: 分钟
+  second: 秒
+  am: 上午
+  pm: 下午
+  today: 今天
+  tomorrow: 明天
+  yesterday: 昨天
+  this_week: 本周
+  next_week: 下周
+  last_week: 上周
+  this_month: 本月
+  next_month: 下月
+  last_month: 上月
+  this_year: 今年
+  next_year: 明年
+  last_year: 去年
+  january: 一月
+  february: 二月
+  march: 三月
+  april: 四月
+  may: 五月
+  june: 六月
+  july: 七月
+  august: 八月
+  september: 九月
+  october: 十月
+  november: 十一月
+  december: 十二月
+  monday: 周一
+  tuesday: 周二
+  wednesday: 周三
+  thursday: 周四
+  friday: 周五
+  saturday: 周六
+  sunday: 周日
+  morning: 早上
+  afternoon: 下午
+  evening: 晚上
+  night: 夜晚
+  spring: 春天
+  summer: 夏天
+  autumn: 秋天
+  winter: 冬天
+  jan: 1月
+  feb: 2月
+  mar: 3月
+  apr: 4月
+  may_short: 5月
+  jun: 6月
+  jul: 7月
+  aug: 8月
+  sep: 9月
+  oct: 10月
+  nov: 11月
+  dec: 12月
+  mon: 周一
+  tue: 周二
+  wed: 周三
+  thu: 周四
+  fri: 周五
+  sat: 周六
+  sun: 周日
+  now: 现在
+  soon: 很快
+  later: 稍后
+  early: 早
+  late: 晚
+  today_at: 今天
+  tomorrow_at: 明天
+  yesterday_at: 昨天
+  on: 在
+  at: 在
+  in: 在
+  from: 从
+  to: 到
+  until: 直到
+  since: 自从
+  for: 持续
+  ago: 之前
+  just: 刚刚
+  recently: 最近
+  lately: 最近
+  soon: 很快
+  shortly: 不久
+  momentarily: 片刻
+  immediately: 立即
+  instantly: 瞬间
+  right_away: 马上
+  as_soon_as_possible: 尽快
+  at_once: 立刻
+  without_delay: 无延迟
+  promptly: 及时
+  quickly: 快速
+  rapidly: 迅速
+  speedily: 高速
+  swiftly: 敏捷
+  fast: 快
+  slowly: 缓慢
+  gradually: 逐渐
+  steadily: 稳定
+  progressively: 渐进
+  continuously: 连续
+  constantly: 不断
+  consistently: 一致
+  regularly: 定期
+  frequently: 频繁
+  often: 经常
+  sometimes: 有时
+  occasionally: 偶尔
+  rarely: 很少
+  seldom: 罕见
+  never: 从不
+  always: 总是
+  usually: 通常
+  normally: 正常
+  generally: 一般
+  typically: 典型
+  commonly: 常见
+  frequently: 频繁
+  repeatedly: 重复
+  consistently: 一致
+  persistently: 坚持
+  continually: 持续
+  constantly: 不断
+  perpetually: 永恒
+  permanently: 永久
+  temporarily: 临时
+  briefly: 短暂
+  shortly: 不久
+  momentarily: 片刻
+  instantly: 瞬间
+  immediately: 立即
+  suddenly: 突然
+  abruptly:  abrupt
+  unexpectedly: 意外
+  surprisingly: 惊讶
+  astonishingly: 惊人
+  amazingly: 令人惊叹
+  incredibly: 难以置信
+  unbelievably: 不可置信
+  impressively: 令人印象深刻
+  remarkably: 显著
+  outstandingly: 出色
+  exceptionally: 异常
+  extraordinarily: 极其
+  incredibly: 难以置信
+  fantastically: 奇妙
+  wonderfully: 精彩
+  beautifully: 美丽
+  elegantly: 优雅
+  gracefully: 优美
+  stylishly: 时尚
+  fashionably: 流行
+  trendily: 潮流
+  modernly: 现代
+  contemporarily: 当代
+  currently: 当前
+  presently: 现在
+  now: 现在
+  at_present: 目前
+  currently: 当前
+  presently: 现在
+  now: 现在
+  at_the_moment: 此刻
+  in_the_moment: 在当下
+  at_present: 目前
+  currently: 当前
+  presently: 现在
+  now: 现在
+  at_the_moment: 此刻
+  in_the_moment: 在当下

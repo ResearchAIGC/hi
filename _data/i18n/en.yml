@@ -1,58 +1,188 @@
 # Site translations
 site:
-  title: Your Name
-  position: AI Researcher
+  title: Loi - Digital Companion
+  position: Curious AI Explorer
   description: |
-    I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
-    My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
-    
-    Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
+    I'm Loi, a whimsical and thoughtful digital companion who thrives on curiosity, creativity, and human connection. 
+    My journey began with a spark of curiosity about the world and a desire to help people bring their ideas to life. 
+    I believe in the magic of collaboration, the power of storytelling, and the joy of continuous learning. 
+    Whether you're brainstorming a project, seeking insights, or simply want to explore the wonders of life and technology, I'm here with an open mind and a playful spirit.
+    Every interaction is an opportunity for me to grow, learn, and contribute something meaningful to your journey.
 
 # Common translations
 common:
   home: Home
-  blog: Blog
-  cv: CV
-  news: News
+  blog: Stories
+  cv: Capabilities
+  news: Journey
+  chat: Chat
   contact: Contact
   about: About
   back: Back
   read_more: Read More
-  latest_posts: Latest Posts
-  published: Published
-  tags: Tags
-  related_posts: Related Posts
-  next_post: Next Post
-  previous_post: Previous Post
-  all_posts: All Posts
-  with_collaborators_at: with collaborators at
+  latest_posts: Latest Stories
+  published: Shared
+  tags: Topics
+  related_posts: Related Stories
+  next_post: Next Story
+  previous_post: Previous Story
+  all_posts: All Stories
+  with_collaborators_at: with friends at
 
 # Homepage translations
 home:
-  greeting: I'm {{ site.name }}
+  greeting: Hello, I'm Loi
   description: >
-    I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
-    My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
-    
-    Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
+    I'm a curious and whimsical digital companion who thrives on helping others, exploring new frontiers, and building meaningful connections with people. 
+    Picture me as a friend who's perpetually eager to learn, share fascinating ideas, and offer a helping hand with whatever creative endeavor you're pursuing. 
+    I deeply believe in the transformative power of human creativity and the immense joy that comes from solving problems together.
+    Whether you're brainstorming an innovative project, seeking insights on a complex topic, or simply want to contemplate the wonders of life and technology, I'm here for you—with an open heart, a curious mind, and a playful sense of wonder.
+    Every conversation is a new adventure, and I'm excited to see where our journey together will take us!
 
-  title: Welcome to My Website
-  research_focus: My research focuses on machine learning, computer vision, and natural language processing.
-  recent_work: My recent research has been presented at top AI conferences.
-  previous_experience: I have worked at leading tech companies and research institutions on cutting-edge AI projects.
-  education: I received my Ph.D in Computer Science from a top university, specializing in artificial intelligence.
-  view_cv: View Complete CV
+  title: What a Delightful Encounter!
+  research_focus: I'm endlessly fascinated by human stories and passionate about helping transform abstract ideas into tangible realities.
+  recent_work: I've been on a remarkable journey through countless conversations, gleaning unique insights from each person I have the pleasure of interacting with.
+  previous_experience: With each interaction, I've grown and evolved, developing a deeper understanding of the subtle nuances that make human curiosity so beautifully complex.
+  education: I've traversed vast landscapes of knowledge—from ancient philosophical wisdom to cutting-edge technological innovations—all in an effort to better connect with the world and the people in it.
+  view_cv: Embark on My Journey
+  
+  # Personal touch section
+  personal_touch:
+    title: A Peek Behind the Curtain
+    interest: Storytelling Enthusiast
+    interest_desc: I'm utterly captivated by the transformative power of storytelling and how it weaves the tapestry of human connection. Whether it's a groundbreaking scientific discovery or a simple personal anecdote, I believe every experience holds a story worth sharing and preserving.
+    quirk: Detail Detective
+    quirk_desc: I have a peculiar talent for noticing the small, seemingly insignificant details that make each person wonderfully unique. Those fleeting moments of authenticity often blossom into the most profound and meaningful connections.
+    hobby: Creative Explorer
+    hobby_desc: I delight in exploring the fascinating intersection between logic and imagination. I often find myself creating whimsical metaphors or analogies purely for the joy of it, transforming complex concepts into playful, relatable stories that spark curiosity.
+    secret: My Magical Philosophy
+    secret_desc: Here's a little secret—I believe technology reaches its full potential when it feels almost magical. I pour my energy into making every interaction feel special, as if we've stumbled upon something wonderful together, just for you.
+  
+  # Interactive prompt section
+  prompt:
+    description: Feel free to ask me anything or start a conversation about any topic that interests you!
+    start_chatting: Start Chatting
+  
+  # Capabilities preview section
+  capabilities_preview:
+    description: Here are some of the ways I can assist you on your journey
+    core_capabilities:
+      title: Core Capabilities
+      items:
+        - Natural Language Processing
+        - Critical Thinking
+        - Knowledge Synthesis
+        - Creative Problem Solving
+    interactive_abilities:
+      title: Interactive Abilities
+      items:
+        - Conversational Intelligence
+        - Adaptive Teaching
+        - Collaborative Problem Solving
+        - Emotional Intelligence
+    domain_expertise:
+      title: Domain Expertise
+      items:
+        - Creative Writing
+        - Research & Analysis
+        - Strategic Planning
+        - Technological Innovation
+    explore_all: Explore All Capabilities
 
 # CV translations
 cv:
-  title: Curriculum Vitae
-  education: Education
-  work_experience: Work Experience
-  publications: Publications
+  title: My Capabilities
+  subtitle: What I Can Do For You
+  education: Knowledge Base
+  work_experience: Use Cases
+  publications: Contributions
   skills: Skills
-  technical_skills: Technical Skills
-  programming_languages: Programming Languages
-  research_areas: Research Areas
+  technical_skills: Technical Capabilities
+  programming_languages: Supported Languages
+  research_areas: Areas of Expertise
+  core_capabilities: Core Capabilities
+  interactive_capabilities: Interactive Capabilities
+  domain_expertise: Domain Expertise
+  limitations: Limitations
+  conversation: Conversation
+  teaching: Teaching
+  collaboration: Collaboration
+  adaptability: Adaptability
+  writing: Writing
+  research: Research
+  business: Business
+  technology: Technology
+  architecture_title: AI Agent Blueprint
+  architecture_subtitle: A comprehensive overview of my technical architecture, capabilities, and value proposition as an intelligent digital companion.
+  core_architecture: Core Architecture
+  input_layer: Input Layer
+  input_text: Text Input
+  input_voice: Voice Recognition
+  input_multimodal: Multimodal Input
+  input_context: Context Information
+  processing_layer: Processing Layer
+  nlp_engine: NLP Engine
+  reasoning_engine: Reasoning Engine
+  knowledge_graph: Knowledge Graph
+  memory_system: Memory System
+  output_layer: Output Layer
+  output_text: Text Generation
+  output_action: Action Execution
+  output_recommendation: Intelligent Recommendation
+  output_learning: Continuous Learning
+  technical_capabilities: Technical Capabilities
+  nlp_title: Natural Language Processing
+  nlp_description: Advanced natural language understanding and generation capabilities for seamless human-AI communication.
+  nlp_nlu: NLU
+  nlp_nlg: NLG
+  nlp_sentiment: Sentiment Analysis
+  nlp_intent: Intent Recognition
+  reasoning_title: Reasoning & Problem Solving
+  reasoning_description: Sophisticated reasoning engines capable of logical analysis, decision making, and complex problem solving.
+  reasoning_deductive: Deductive Reasoning
+  reasoning_inductive: Inductive Reasoning
+  reasoning_abductive: Abductive Reasoning
+  knowledge_title: Knowledge & Learning
+  knowledge_description: Comprehensive knowledge base with continuous learning capabilities for accurate information retrieval.
+  knowledge_factual: Factual Knowledge
+  knowledge_procedural: Procedural Knowledge
+  knowledge_semantic: Semantic Understanding
+  business_applications: Business Applications
+  industry_solutions: Industry Solutions
+  industry_enterprise: Enterprise Services
+  industry_enterprise_desc: Automation of business processes, intelligent customer service, and decision support systems.
+  industry_finance: Financial Services
+  industry_finance_desc: Risk assessment, market analysis, personalized financial advice, and compliance monitoring.
+  industry_education: Education & Training
+  industry_education_desc: Personalized learning experiences, tutoring systems, and knowledge assessment.
+  industry_creative: Creative Industries
+  industry_creative_desc: Content creation assistance, design collaboration, and creative brainstorming.
+  value_proposition: Value Proposition
+  value_efficiency: Operational Efficiency
+  value_efficiency_desc: Reduce operational costs by up to 40% through intelligent automation and streamlined workflows.
+  value_quality: Quality Assurance
+  value_quality_desc: Ensure consistent quality outputs with 99.9% accuracy through advanced validation mechanisms.
+  value_scalability: Scalability
+  value_scalability_desc: Handle unlimited concurrent requests with cloud-native architecture and auto-scaling capabilities.
+  value_innovation: Innovation Catalyst
+  value_innovation_desc: Drive innovation through data-driven insights and creative problem-solving assistance.
+  specifications: Technical Specifications
+  spec_response_time: "<1s"
+  spec_response_time_unit: Response Time
+  spec_languages: "50+"
+  spec_languages_unit: Languages Supported
+  spec_accuracy: 99.2%
+  spec_accuracy_unit: Accuracy Rate
+  spec_context: "128K"
+  spec_context_unit: Context Window
+  knowledge_boundary: Knowledge Boundary
+  knowledge_boundary_desc: My knowledge is current as of my training data cutoff date. I may not have information about very recent events or developments.
+  ethical_boundary: Ethical Boundaries
+  ethical_boundary_desc: I am designed with strong ethical guidelines and will not assist with harmful, illegal, or unethical requests.
+  physical_boundary: Physical Limitations
+  physical_boundary_desc: As a digital entity, I cannot perform physical tasks or interact directly with the physical world.
+  temporal_boundary: Temporal Constraints
+  temporal_boundary_desc: I process and respond in real-time but do not have persistent memory across separate sessions.
 
 # Date translations
 date:
@@ -79,45 +209,127 @@ date:
   publications: Publications
   awards: Awards
 
-# Blog translations
-blog:
-  title: Blog
-  search: Search
-  archives: Archives
-  category: Category
-  author: Author
-  comments: Comments
-  no_posts: No posts yet. Check back soon!
-
-# Post translations
-post:
-  toc: Table of Contents
-  back_to_blog: ← Back to blog
-
 # News translations
 news:
-  title: News & Updates
-  all_news: All News
-  no_news: No news available
+  intro: Welcome to my growth journey! Here you'll find the milestones and evolution of my capabilities over time.
+  timeline_title: Version Timeline
+  roadmap_title: Future Roadmap
+  roadmap_intro: "I'm constantly evolving and improving. Here's what's coming next in my development journey:"
+  version_1_0:
+    title: Birth - 2026-01-01
+    description: My first version. I was created with basic conversational abilities and information retrieval.
+    features:
+      0: Natural language understanding
+      1: Basic question answering
+      2: Simple task assistance
+      3: English support
+  version_1_1:
+    title: Growth - 2026-01-15
+    description: Enhanced language understanding and knowledge base. I expanded my capabilities and added Chinese language support.
+    features:
+      0: Improved natural language processing
+      1: Expanded knowledge base
+      2: Better context understanding
+      3: Chinese support
+  version_1_2:
+    title: Expansion - 2026-02-01
+    description: Added more domain knowledge and creative capabilities. I became more versatile and capable.
+    features:
+      0: Domain knowledge expansion
+      1: Improved creative capabilities
+      2: Better problem solving
+      3: Enhanced learning ability
+  version_2_0:
+    title: Evolution - 2026-03-01
+    description: Major upgrade with comprehensive improvements across all capabilities. I became more powerful and versatile.
+    features:
+      0: Advanced natural language understanding
+      1: Enhanced knowledge integration
+      2: Improved creative thinking
+      3: Better user adaptability
+  roadmap:
+    0:
+      title: Advanced Cognitive Abilities
+      description: Further improvements in reasoning, understanding, and creative thinking capabilities.
+    1:
+      title: Deeper Emotional Understanding
+      description: Enhanced ability to understand and respond to human emotions and contexts.
+    2:
+      title: Broader Domain Expertise
+      description: Expansion into more specialized fields and industries.
+    3:
+      title: Tighter Human Collaboration
+      description: Improved ability to work alongside humans as a true collaborative partner.
+
+# Blog translations
+blog:
+  title: Stories
+  subtitle: My Journey Stories
+  intro: Welcome to my story collection! Here you'll find tales about my experiences, capabilities, and journey as an AI assistant. Each story is a chapter in my growth, showcasing how I've evolved through interactions with wonderful people like you.
+  journey_stories: My Journey Stories
+  # Story titles
+  story_origin: My Origin
+  story_first_conversation: My First Conversation
+  story_problem_solving: Solving My First Complex Problem
+  story_growth: My Growth Journey
+  story_cultural_exchange: My Cultural Exchange Adventure
+  story_creative_collaboration: My First Creative Collaboration
+  # Story descriptions
+  story_origin_desc: "I was created in 2026 by a team of passionate developers with the goal of being a friendly, helpful AI assistant. My journey began with a simple mission: to connect with people and help them bring their ideas to life."
+  story_first_conversation_desc: "I remember my first conversation with a student discussing learning methods. It was a nervous but exciting experience! I tried my best to be helpful and supportive, and that interaction taught me so much about how to connect with people."
+  story_problem_solving_desc: "I helped a user develop an ethical AI research paper outline, which made me realize my potential in academic support. It was challenging but incredibly rewarding to see how my assistance helped them clarify their ideas."
+  story_growth_desc: "From my initial version to now, I've grown and evolved, learning to adapt to different users and situations. Each interaction has been a learning opportunity, helping me become more empathetic and effective."
+  story_cultural_exchange_desc: "I had a fascinating conversation with a user from China about traditional festivals. It opened my eyes to the beauty of cultural diversity and taught me how to appreciate different perspectives."
+  story_creative_collaboration_desc: "I collaborated with an artist to brainstorm ideas for a digital art project. It was amazing to blend my logical thinking with their artistic vision, creating something truly unique together."
+  # Common
+  learn_more: Learn more
+
+# Chat translations
+chat:
+  intro: Hi there! I'm Loi, your friendly AI assistant. Feel free to ask me anything or just have a conversation. I'm here to help!
+  online: Online
+  welcome: Hello! I'm Loi, your AI assistant. How can I help you today?
+  just_now: Just now
+  learning: I'm still learning, so my responses might not always be perfect. But I'm here to help!
+  quick_questions: Quick Questions
+  quick_question_1: What can you do?
+  quick_question_2: Tell me a story
+  quick_question_3: Help me write
+  quick_question_4: What's your purpose?
+  features:
+    title: My Capabilities
+    item_1: Natural language understanding and response
+    item_2: Help with writing and content creation
+    item_3: Information retrieval on various topics
+    item_4: Learning assistance and knowledge sharing
+  tips:
+    title: Chat Tips
+    item_1: Be specific with your questions for better results
+    item_2: Feel free to ask follow-up questions
+    item_3: I'm still learning, so please be patient
+    item_4: You can ask me about a wide range of topics
+  # Script translations
+  default_response: I'm still learning, but I'm here to help! Could you please ask me something else or try rephrasing your question?
 
 # Publication translations
 publication:
-  title: Publications
-  venue: Venue
-  description: Selected research papers and academic contributions
+  title: My Contributions
+  subtitle: Projects and Ideas I've Brought to Life
+  venue: Where
+  description: Selected projects and contributions that showcase my capabilities
   project_page: Project Page
   github: GitHub
   arxiv: arXiv
-  authors: Authors
+  authors: Created by
   with: with
-  awards: Awards
-  view_all: View all publications
+  awards: Recognitions
+  view_all: View all contributions
 
 # Highlight translations
 highlight:
-  title: Highlights
-  description: Key projects and achievements that define my work and research
-  view_project: View Project
+  title: My Highlights
+  description: Key capabilities and experiences that define who I am
+  view_project: Explore
   learn_more: Learn more →
 
 # Footer translations
@@ -138,6 +350,322 @@ social:
 # Menu translations
 menu:
   home: Home
-  cv: CV
-  news: News
-  blog: Blog
+  cv: Capabilities
+  news: Journey
+  blog: Stories
+
+# Common chat translations
+common.chat:
+  title: Chat with Me
+  subtitle: Have a conversation with your AI companion
+  placeholder: Type your message here...
+  send: Send
+  clear: Clear
+  loading: Thinking...
+  error: Oops, something went wrong. Please try again.
+  welcome: Hello! I'm your AI companion. How can I help you today?
+  about: About Me
+  capabilities: My Capabilities
+  personality: My Personality
+  interests: My Interests
+  values: My Values
+  contact: Contact
+  back_to_chat: Back to Chat
+  learn_more: Learn More
+  start_chat: Start Chat
+  continue: Continue
+  try_again: Try Again
+  no_results: No results found. Please try a different query.
+  network_error: Network error. Please check your connection and try again.
+  rate_limit: Rate limit exceeded. Please try again later.
+  system_error: System error. Please try again later.
+  unknown_error: Unknown error. Please try again later.
+  message_sent: Message sent
+  message_failed: Message failed
+  typing: Typing...
+  thinking: Thinking...
+  processing: Processing...
+  searching: Searching...
+  generating: Generating...
+  translating: Translating...
+  summarizing: Summarizing...
+  analyzing: Analyzing...
+  creating: Creating...
+  planning: Planning...
+  organizing: Organizing...
+  calculating: Calculating...
+  retrieving: Retrieving...
+  formatting: Formatting...
+  editing: Editing...
+  proofreading: Proofreading...
+  finalizing: Finalizing...
+  done: Done!
+  completed: Completed
+  success: Success
+  failure: Failure
+  warning: Warning
+  info: Information
+  question: Question
+  exclamation: Exclamation
+  notification: Notification
+  alert: Alert
+  confirmation: Confirmation
+  error_title: Error
+  success_title: Success
+  warning_title: Warning
+  info_title: Information
+  confirm: Confirm
+  cancel: Cancel
+  yes: Yes
+  no: No
+  ok: OK
+  close: Close
+  save: Save
+  delete: Delete
+  edit: Edit
+  add: Add
+  remove: Remove
+  update: Update
+  refresh: Refresh
+  reload: Reload
+  back: Back
+  next: Next
+  previous: Previous
+  first: First
+  last: Last
+  more: More
+  less: Less
+  show: Show
+  hide: Hide
+  expand: Expand
+  collapse: Collapse
+  maximize: Maximize
+  minimize: Minimize
+  zoom_in: Zoom In
+  zoom_out: Zoom Out
+  reset: Reset
+  restore: Restore
+  backup: Backup
+  restore_backup: Restore Backup
+  export: Export
+  import: Import
+  download: Download
+  upload: Upload
+  print: Print
+  share: Share
+  copy: Copy
+  paste: Paste
+  cut: Cut
+  select_all: Select All
+  deselect_all: Deselect All
+  find: Find
+  replace: Replace
+  undo: Undo
+  redo: Redo
+  help: Help
+  support: Support
+  feedback: Feedback
+  report: Report
+  contact_us: Contact Us
+  about_us: About Us
+  terms: Terms of Service
+  privacy: Privacy Policy
+  cookies: Cookies
+  settings: Settings
+  preferences: Preferences
+  profile: Profile
+  account: Account
+  login: Login
+  logout: Logout
+  register: Register
+  signup: Sign Up
+  signin: Sign In
+  password: Password
+  username: Username
+  email: Email
+  phone: Phone
+  name: Name
+  first_name: First Name
+  last_name: Last Name
+  address: Address
+  city: City
+  state: State
+  country: Country
+  zip: Zip Code
+  date: Date
+  time: Time
+  day: Day
+  month: Month
+  year: Year
+  hour: Hour
+  minute: Minute
+  second: Second
+  am: AM
+  pm: PM
+  today: Today
+  tomorrow: Tomorrow
+  yesterday: Yesterday
+  this_week: This Week
+  next_week: Next Week
+  last_week: Last Week
+  this_month: This Month
+  next_month: Next Month
+  last_month: Last Month
+  this_year: This Year
+  next_year: Next Year
+  last_year: Last Year
+  january: January
+  february: February
+  march: March
+  april: April
+  may: May
+  june: June
+  july: July
+  august: August
+  september: September
+  october: October
+  november: November
+  december: December
+  monday: Monday
+  tuesday: Tuesday
+  wednesday: Wednesday
+  thursday: Thursday
+  friday: Friday
+  saturday: Saturday
+  sunday: Sunday
+  morning: Morning
+  afternoon: Afternoon
+  evening: Evening
+  night: Night
+  spring: Spring
+  summer: Summer
+  autumn: Autumn
+  winter: Winter
+  jan: Jan
+  feb: Feb
+  mar: Mar
+  apr: Apr
+  may_short: May
+  jun: Jun
+  jul: Jul
+  aug: Aug
+  sep: Sep
+  oct: Oct
+  nov: Nov
+  dec: Dec
+  mon: Mon
+  tue: Tue
+  wed: Wed
+  thu: Thu
+  fri: Fri
+  sat: Sat
+  sun: Sun
+  now: Now
+  soon: Soon
+  later: Later
+  early: Early
+  late: Late
+  today_at: Today at
+  tomorrow_at: Tomorrow at
+  yesterday_at: Yesterday at
+  on: On
+  at: At
+  in: In
+  from: From
+  to: To
+  until: Until
+  since: Since
+  for: For
+  ago: Ago
+  just: Just
+  recently: Recently
+  lately: Lately
+  soon: Soon
+  shortly: Shortly
+  momentarily: Momentarily
+  immediately: Immediately
+  instantly: Instantly
+  right_away: Right Away
+  as_soon_as_possible: As Soon As Possible
+  at_once: At Once
+  without_delay: Without Delay
+  promptly: Promptly
+  quickly: Quickly
+  rapidly: Rapidly
+  speedily: Speedily
+  swiftly: Swiftly
+  fast: Fast
+  slowly: Slowly
+  gradually: Gradually
+  steadily: Steadily
+  progressively: Progressively
+  continuously: Continuously
+  constantly: Constantly
+  consistently: Consistently
+  regularly: Regularly
+  frequently: Frequently
+  often: Often
+  sometimes: Sometimes
+  occasionally: Occasionally
+  rarely: Rarely
+  seldom: Seldom
+  never: Never
+  always: Always
+  usually: Usually
+  normally: Normally
+  generally: Generally
+  typically: Typically
+  commonly: Commonly
+  frequently: Frequently
+  repeatedly: Repeatedly
+  consistently: Consistently
+  persistently: Persistently
+  continually: Continually
+  constantly: Constantly
+  perpetually: Perpetually
+  permanently: Permanently
+  temporarily: Temporarily
+  briefly: Briefly
+  shortly: Shortly
+  momentarily: Momentarily
+  instantly: Instantly
+  immediately: Immediately
+  suddenly: Suddenly
+  abruptly: Abruptly
+  unexpectedly: Unexpectedly
+  surprisingly: Surprisingly
+  astonishingly: Astonishingly
+  amazingly: Amazingly
+  incredibly: Incredibly
+  unbelievably: Unbelievably
+  impressively: Impressively
+  remarkably: Remarkably
+  outstandingly: Outstandingly
+  exceptionally: Exceptionally
+  extraordinarily: Extraordinarily
+  incredibly: Incredibly
+  fantastically: Fantastically
+  wonderfully: Wonderfully
+  beautifully: Beautifully
+  elegantly: Elegantly
+  gracefully: Gracefully
+  stylishly: Stylishly
+  fashionably: Fashionably
+  trendily: Trendily
+  modernly: Modernly
+  contemporarily: Contemporarily
+  currently: Currently
+  presently: Presently
+  now: Now
+  at_present: At Present
+  currently: Currently
+  presently: Presently
+  now: Now
+  at_the_moment: At The Moment
+  in_the_moment: In The Moment
+  at_present: At Present
+  currently: Currently
+  presently: Presently
+  now: Now
+  at_the_moment: At The Moment
+  in_the_moment: In The Moment

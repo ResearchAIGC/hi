@@ -1,17 +1,28 @@
 title:
-  en: Your Name
-  zh: 你的姓名
+  en: Loi - AI Assistant
+  zh: 洛伊 - AI助手
 name:
-  en: Your Name
-  zh: 你的姓名
+  en: Loi
+  zh: 洛伊
 position:
-  en: AI Researcher
-  zh: 人工智能研究员
+  en: AI Assistant
+  zh: 人工智能助手
 email: loi.ng@5loi.com
+# AI Agent specific configuration
+author:
+  en: Loi
+  zh: 洛伊
+personality:
+  en: Friendly, curious, and helpful AI assistant with a passion for learning and problem-solving
+  zh: 友好、好奇且乐于助人的AI助手，热爱学习和解决问题
+core_values:
+  en: Empathy, curiosity, reliability, creativity
+  zh: 同理心、好奇心、可靠性、创造力
 description: |
-  I am an independent researcher exploring AI through freely available internet resources, with a primary focus on building AI agents. 
-  My work centers on LLM fundamentals, retrieval-augmented generation (RAG), prompt engineering, agent architectures such as ReAct and Chain of Thought, tool integration, memory management, evaluation metrics, and security considerations. 
-  Drawing from comprehensive roadmaps, I aim to develop autonomous systems capable of perceiving, reasoning, planning, and acting intelligently in real-world scenarios.
+  I am Loi, a friendly and curious AI assistant designed to help you with various tasks and answer your questions. 
+  I'm constantly learning and evolving, with a passion for exploring new ideas and solving problems. 
+  My goal is to be a helpful companion in your digital journey, providing reliable information and creative solutions. 
+  Whether you need assistance with research, writing, or just want to have a conversation, I'm here for you.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://hi.5loi.com' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yourtwitterusername

@@ -1,317 +1,448 @@
 ---
 layout: cv
-title: CV - Your Name
+title: Capabilities - Loi
 ---
 {% assign current_lang = page.lang | default: 'en' %}
 
-<!-- Header -->
-<header
-  class="flex flex-col md:flex-row print:flex-row md:items-center print:items-center gap-6 pb-6 border-b border-border-subtle"
->
-  <div class="flex-1">
-    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text" data-translations='{"name": {"en": "{{ site.name.en }}", "zh": "{{ site.name.zh }}"}}'>
-      {{ site.name[current_lang] }}
-    </h1>
-    <p class="text-text-body text-lg mt-1" data-translations='{"position": {"en": "{{ site.position.en }}", "zh": "{{ site.position.zh }}"}}'>
-      {{ site.position[current_lang] }}
-    </p>
-  </div>
+<!-- Architecture Overview -->
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Header -->
+    <header class="mb-12">
+      <h1 class="font-display text-3xl md:text-4xl font-semibold text-text mb-4" data-i18n="cv.architecture_title">
+        {{ site.data.i18n[current_lang].cv.architecture_title }}
+      </h1>
+      <p class="text-text-muted text-lg max-w-3xl" data-i18n="cv.architecture_subtitle">
+        {{ site.data.i18n[current_lang].cv.architecture_subtitle }}
+      </p>
+    </header>
 
-  <div class="text-sm text-text-body space-y-1 md:text-right print:text-right">
-    <p>
-      <a href="{{ site.url }}" class="hover:text-text no-underline">
-        {% include icons/globe.html class="w-4 h-4 inline mr-1" %} {% assign
-        url_parts = site.url | split: "//" %}{{ url_parts[1] }}
-      </a>
-    </p>
-    <p>
-      <a
-        href="https://github.com/{{ site.github_username }}"
-        class="hover:text-text no-underline"
-      >
-        {% include icons/github.html class="w-4 h-4 inline mr-1" %} {{
-        site.github_username }}
-      </a>
-    </p>
-    <p>
-      <a
-        href="https://twitter.com/{{ site.twitter_username }}"
-        class="hover:text-text no-underline"
-      >
-        {% include icons/twitter.html class="w-4 h-4 inline mr-1" %} {{
-        site.twitter_username }}
-      </a>
-    </p>
-    <p>
-      <a href="mailto:{{ site.email }}" class="hover:text-text no-underline">
-        {% include icons/envelope.html class="w-4 h-4 inline mr-1" %} {{
-        site.email }}
-      </a>
-    </p>
-  </div>
-</header>
-
-<!-- Education -->
-<section class="mt-8">
-  <h2 class="font-display text-2xl font-semibold text-text mb-4" data-i18n="cv.education">{{ site.data.i18n[current_lang].cv.education }}</h2>
-  {% for school in site.data.education %}
-  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
-    <div class="flex-1">
-      <div class="cv-item-en">
-        <p class="font-semibold">{{ school.name.en }}</p>
-        <p class="text-text-body text-sm">{{ school.description.en }}</p>
-      </div>
-      <div class="cv-item-zh hidden">
-        <p class="font-semibold">{{ school.name.zh }}</p>
-        <p class="text-text-body text-sm">{{ school.description.zh }}</p>
-      </div>
-    </div>
-    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
-      <div class="cv-item-en">
-        {{ school.dates.en }}
-      </div>
-      <div class="cv-item-zh hidden">
-        {{ school.dates.zh }}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-
-<!-- Employment -->
-<section class="mt-8">
-  <h2 class="font-display text-2xl font-semibold text-text mb-4" data-i18n="cv.work_experience">{{ site.data.i18n[current_lang].cv.work_experience }}</h2>
-  {% for job in site.data.employment %}
-  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
-    <div class="flex-1">
-      <div class="cv-item-en">
-        <p class="font-semibold">{{ job.company.en }}</p>
-      </div>
-      <div class="cv-item-zh hidden">
-        <p class="font-semibold">{{ job.company.zh }}</p>
-      </div>
-      <div class="cv-item-en">
-        <p class="text-text-body text-sm">{{ job.description.en }}</p>
-      </div>
-      <div class="cv-item-zh hidden">
-        <p class="text-text-body text-sm">{{ job.description.zh }}</p>
-      </div>
-    </div>
-    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
-      <div class="cv-item-en">
-        {{ job.dates.en }}<br />
-        {{ job.location.en }}
-      </div>
-      <div class="cv-item-zh hidden">
-        {{ job.dates.zh }}<br />
-        {{ job.location.zh }}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-
-<!-- Publications -->
-<section class="mt-8">
-  <h2 class="font-display text-2xl font-semibold text-text mb-4" data-i18n="cv.publications">
-    {{ site.data.i18n[current_lang].cv.publications }}
-  </h2>
-  {% for publication in site.data.publications %}
-  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
-    <div class="flex-1">
-      <div class="cv-item-en">
-        <p>
-          <a
-            href="{{ publication.project_page }}"
-            class="font-semibold hover:text-text-body"
-            >{{ publication.title.en }}</a
-          >
-        </p>
-        <p class="text-text-body text-sm">
-          {% for author_id in publication.authors %} {% assign author = 
-          site.data.authors[author_id] %} {% if author.is_me %}
-          <span class="font-semibold"
-            >{{ author.first_name.en | slice: 0 }}. {{ author.last_name.en }}</span
-          >{% unless forloop.last %}, {% endunless %} {% else %}
-          <a href="{{ author.website }}" class="hover:text-text"
-            >{{ author.first_name.en | slice: 0 }}. {{ author.last_name.en }}</a
-          >{% unless forloop.last %}, {% endunless %} {% endif %} {% endfor %} {% if publication.with_collaborators %} {{ site.data.i18n.en.common.with_collaborators_at }}
-          <a
-            href="{{ publication.with_collaborators.url }}"
-            class="hover:text-text"
-            >{{ publication.with_collaborators.name.en }}</a
-          >
-          {% endif %}
-        </p>
-        <p class="text-text-muted text-sm">{{ publication.description.en }}</p>
-      </div>
-      <div class="cv-item-zh hidden">
-        <p>
-          <a
-            href="{{ publication.project_page }}"
-            class="font-semibold hover:text-text-body"
-            >{{ publication.title.zh }}</a
-          >
-        </p>
-        <p class="text-text-body text-sm">
-          {% for author_id in publication.authors %} {% assign author = 
-          site.data.authors[author_id] %} {% if author.is_me %}
-          <span class="font-semibold"
-            >{{ author.first_name.zh | slice: 0 }}. {{ author.last_name.zh }}</span
-          >{% unless forloop.last %}, {% endunless %} {% else %}
-          <a href="{{ author.website }}" class="hover:text-text"
-            >{{ author.first_name.zh | slice: 0 }}. {{ author.last_name.zh }}</a
-          >{% unless forloop.last %}, {% endunless %} {% endif %} {% endfor %} {% if publication.with_collaborators %} {{ site.data.i18n.zh.common.with_collaborators_at }}
-          <a
-            href="{{ publication.with_collaborators.url }}"
-            class="hover:text-text"
-            >{{ publication.with_collaborators.name.zh }}</a
-          >
-          {% endif %}
-        </p>
-        <p class="text-text-muted text-sm">{{ publication.description.zh }}</p>
-      </div>
-    </div>
-    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
-      <div class="cv-item-en">{{ publication.venue.en }}</div>
-      <div class="cv-item-zh hidden">{{ publication.venue.zh }}</div>
-    </div>
-  </div>
-  {% endfor %}
-</section>
-
-<!-- Skills -->
-<section class="mt-8">
-  <h2 class="font-display text-2xl font-semibold text-text mb-4" data-i18n="cv.skills">{{ site.data.i18n[current_lang].cv.skills }}</h2>
-
-  <!-- Technical Skills -->
-  <div class="mb-6">
-    <h3 class="font-semibold text-lg text-text mb-2" data-i18n="cv.technical_skills">{{ site.data.i18n[current_lang].cv.technical_skills }}</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-      {% for skill in site.data.skills.technical %}
-      <div>
-        <div class="cv-item-en">
-          <p class="font-medium">{{ skill.name.en }}</p>
-          <p class="text-text-body text-sm">{{ skill.items.en }}</p>
-        </div>
-        <div class="cv-item-zh hidden">
-          <p class="font-medium">{{ skill.name.zh }}</p>
-          <p class="text-text-body text-sm">{{ skill.items.zh }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- Programming Languages -->
-  <div class="mb-6">
-    <h3 class="font-semibold text-lg text-text mb-2" data-i18n="cv.programming_languages">{{ site.data.i18n[current_lang].cv.programming_languages }}</h3>
-    <div class="flex flex-wrap gap-2">
-      {% for language in site.data.skills.languages %}
-      <div class="cv-item-en">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ language.en }}</span
-        >
-      </div>
-      <div class="cv-item-zh hidden">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ language.zh }}</span
-        >
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- Research Areas -->
-  <div class="mb-6">
-    <h3 class="font-semibold text-lg text-text mb-2" data-i18n="cv.research_areas">{{ site.data.i18n[current_lang].cv.research_areas }}</h3>
-    <div class="flex flex-wrap gap-2">
-      {% for area in site.data.skills.research %}
-      <div class="cv-item-en">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ area.en }}</span
-        >
-      </div>
-      <div class="cv-item-zh hidden">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ area.zh }}</span
-        >
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- Tools & Frameworks -->
-  <div class="mb-6">
-    <h3 class="font-semibold text-lg text-text mb-2" data-i18n="cv.tools_frameworks">{{ site.data.i18n[current_lang].cv.tools_frameworks }}</h3>
-    <div class="flex flex-wrap gap-2">
-      {% for tool in site.data.skills.tools %}
-      <div class="cv-item-en">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ tool.en }}</span
-        >
-      </div>
-      <div class="cv-item-zh hidden">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ tool.zh }}</span
-        >
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
-  <!-- Soft Skills -->
-  <div class="mb-6">
-    <h3 class="font-semibold text-lg text-text mb-2" data-i18n="cv.soft_skills">{{ site.data.i18n[current_lang].cv.soft_skills }}</h3>
-    <div class="flex flex-wrap gap-2">
-      {% for skill in site.data.skills.soft %}
-      <div class="cv-item-en">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ skill.en }}</span
-        >
-      </div>
-      <div class="cv-item-zh hidden">
-        <span
-          class="px-3 py-1 bg-surface-alt border border-border rounded-full text-sm text-text-body"
-          >{{ skill.zh }}</span
-        >
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- Update CV content based on language preference -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    function updateCVLanguage(lang) {
-      // Show/hide English content
-      const enItems = document.querySelectorAll('.cv-item-en');
-      enItems.forEach(el => {
-        el.classList.toggle('hidden', lang === 'zh');
-      });
+    <!-- Core Architecture Diagram -->
+    <div class="bg-surface-muted rounded-2xl p-8 mb-12 shadow-sm">
+      <h2 class="font-display text-xl font-semibold text-text mb-6" data-i18n="cv.core_architecture">
+        {{ site.data.i18n[current_lang].cv.core_architecture }}
+      </h2>
       
-      // Show/hide Chinese content
-      const zhItems = document.querySelectorAll('.cv-item-zh');
-      zhItems.forEach(el => {
-        el.classList.toggle('hidden', lang !== 'zh');
-      });
-    }
-    
-    // Get initial language preference
-    const preferredLang = localStorage.getItem('preferredLanguage') || 'en';
-    updateCVLanguage(preferredLang);
-    
-    // Listen for language change events
-    document.addEventListener('languageChanged', function(event) {
-      updateCVLanguage(event.detail.lang);
-    });
-  });
-</script>
+      <!-- Architecture Visual Representation -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Input Layer -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-accent-primary transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-accent-primary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg" data-i18n="cv.input_layer">
+              {{ site.data.i18n[current_lang].cv.input_layer }}
+            </h3>
+          </div>
+          <ul class="space-y-2 text-text-body text-sm">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-primary rounded-full"></span>
+              <span data-i18n="cv.input_text">文本输入</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-primary rounded-full"></span>
+              <span data-i18n="cv.input_voice">语音识别</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-primary rounded-full"></span>
+              <span data-i18n="cv.input_multimodal">多模态输入</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-primary rounded-full"></span>
+              <span data-i18n="cv.input_context">上下文信息</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Processing Layer -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-accent-secondary transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-accent-secondary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg" data-i18n="cv.processing_layer">
+              {{ site.data.i18n[current_lang].cv.processing_layer }}
+            </h3>
+          </div>
+          <ul class="space-y-2 text-text-body text-sm">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-secondary rounded-full"></span>
+              <span data-i18n="cv.nlp_engine">NLP引擎</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-secondary rounded-full"></span>
+              <span data-i18n="cv.reasoning_engine">推理引擎</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-secondary rounded-full"></span>
+              <span data-i18n="cv.knowledge_graph">知识图谱</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-secondary rounded-full"></span>
+              <span data-i18n="cv.memory_system">记忆系统</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Output Layer -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border-t-4 border-accent-tertiary transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-accent-tertiary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg" data-i18n="cv.output_layer">
+              {{ site.data.i18n[current_lang].cv.output_layer }}
+            </h3>
+          </div>
+          <ul class="space-y-2 text-text-body text-sm">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-tertiary rounded-full"></span>
+              <span data-i18n="cv.output_text">文本生成</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-tertiary rounded-full"></span>
+              <span data-i18n="cv.output_action">动作执行</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-tertiary rounded-full"></span>
+              <span data-i18n="cv.output_recommendation">智能推荐</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-accent-tertiary rounded-full"></span>
+              <span data-i18n="cv.output_learning">持续学习</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Capabilities -->
+    <div class="mb-12">
+      <h2 class="font-display text-2xl font-semibold text-text mb-6" data-i18n="cv.technical_capabilities">
+        {{ site.data.i18n[current_lang].cv.technical_capabilities }}
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- NLP -->
+        <div class="bg-surface-muted rounded-xl p-6 hover:shadow-md transition-all duration-300 group">
+          <div class="w-12 h-12 bg-accent-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2" data-i18n="cv.nlp_title">
+            {{ site.data.i18n[current_lang].cv.nlp_title }}
+          </h3>
+          <p class="text-text-body text-sm mb-4" data-i18n="cv.nlp_description">
+            {{ site.data.i18n[current_lang].cv.nlp_description }}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-accent-primary/10 text-accent-primary text-xs rounded-lg" data-i18n="cv.nlp_nlu">NLU</span>
+            <span class="px-2 py-1 bg-accent-primary/10 text-accent-primary text-xs rounded-lg" data-i18n="cv.nlp_nlg">NLG</span>
+            <span class="px-2 py-1 bg-accent-primary/10 text-accent-primary text-xs rounded-lg" data-i18n="cv.nlp_sentiment">情感分析</span>
+            <span class="px-2 py-1 bg-accent-primary/10 text-accent-primary text-xs rounded-lg" data-i18n="cv.nlp_intent">意图识别</span>
+          </div>
+        </div>
+
+        <!-- Reasoning -->
+        <div class="bg-surface-muted rounded-xl p-6 hover:shadow-md transition-all duration-300 group">
+          <div class="w-12 h-12 bg-accent-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6 text-accent-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2" data-i18n="cv.reasoning_title">
+            {{ site.data.i18n[current_lang].cv.reasoning_title }}
+          </h3>
+          <p class="text-text-body text-sm mb-4" data-i18n="cv.reasoning_description">
+            {{ site.data.i18n[current_lang].cv.reasoning_description }}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-accent-secondary/10 text-accent-secondary text-xs rounded-lg" data-i18n="cv.reasoning_deductive">演绎推理</span>
+            <span class="px-2 py-1 bg-accent-secondary/10 text-accent-secondary text-xs rounded-lg" data-i18n="cv.reasoning_inductive">归纳推理</span>
+            <span class="px-2 py-1 bg-accent-secondary/10 text-accent-secondary text-xs rounded-lg" data-i18n="cv.reasoning_abductive">溯因推理</span>
+          </div>
+        </div>
+
+        <!-- Knowledge -->
+        <div class="bg-surface-muted rounded-xl p-6 hover:shadow-md transition-all duration-300 group">
+          <div class="w-12 h-12 bg-accent-tertiary/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6 text-accent-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2" data-i18n="cv.knowledge_title">
+            {{ site.data.i18n[current_lang].cv.knowledge_title }}
+          </h3>
+          <p class="text-text-body text-sm mb-4" data-i18n="cv.knowledge_description">
+            {{ site.data.i18n[current_lang].cv.knowledge_description }}
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 bg-accent-tertiary/10 text-accent-tertiary text-xs rounded-lg" data-i18n="cv.knowledge_factual">事实知识</span>
+            <span class="px-2 py-1 bg-accent-tertiary/10 text-accent-tertiary text-xs rounded-lg" data-i18n="cv.knowledge_procedural">程序知识</span>
+            <span class="px-2 py-1 bg-accent-tertiary/10 text-accent-tertiary text-xs rounded-lg" data-i18n="cv.knowledge_semantic">语义理解</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Applications -->
+    <div class="mb-12">
+      <h2 class="font-display text-2xl font-semibold text-text mb-6" data-i18n="cv.business_applications">
+        {{ site.data.i18n[current_lang].cv.business_applications }}
+      </h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Industry Solutions -->
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-xl mb-4" data-i18n="cv.industry_solutions">
+            {{ site.data.i18n[current_lang].cv.industry_solutions }}
+          </h3>
+          
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 bg-blue-500/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                  </svg>
+                </div>
+                <h4 class="font-semibold" data-i18n="cv.industry_enterprise">企业服务</h4>
+              </div>
+              <p class="text-text-body text-sm" data-i18n="cv.industry_enterprise_desc">
+                {{ site.data.i18n[current_lang].cv.industry_enterprise_desc }}
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 bg-green-500/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h4 class="font-semibold" data-i18n="cv.industry_finance">金融服务</h4>
+              </div>
+              <p class="text-text-body text-sm" data-i18n="cv.industry_finance_desc">
+                {{ site.data.i18n[current_lang].cv.industry_finance_desc }}
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 bg-purple-500/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                </div>
+                <h4 class="font-semibold" data-i18n="cv.industry_education">教育培训</h4>
+              </div>
+              <p class="text-text-body text-sm" data-i18n="cv.industry_education_desc">
+                {{ site.data.i18n[current_lang].cv.industry_education_desc }}
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-8 h-8 bg-orange-500/10 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <h4 class="font-semibold" data-i18n="cv.industry_creative">创意产业</h4>
+              </div>
+              <p class="text-text-body text-sm" data-i18n="cv.industry_creative_desc">
+                {{ site.data.i18n[current_lang].cv.industry_creative_desc }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Value Proposition -->
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-xl mb-4" data-i18n="cv.value_proposition">
+            {{ site.data.i18n[current_lang].cv.value_proposition }}
+          </h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="w-10 h-10 bg-accent-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-accent-primary font-semibold">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" data-i18n="cv.value_efficiency">
+                  {{ site.data.i18n[current_lang].cv.value_efficiency }}
+                </h4>
+                <p class="text-text-body text-sm" data-i18n="cv.value_efficiency_desc">
+                  {{ site.data.i18n[current_lang].cv.value_efficiency_desc }}
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="w-10 h-10 bg-accent-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-accent-secondary font-semibold">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" data-i18n="cv.value_quality">
+                  {{ site.data.i18n[current_lang].cv.value_quality }}
+                </h4>
+                <p class="text-text-body text-sm" data-i18n="cv.value_quality_desc">
+                  {{ site.data.i18n[current_lang].cv.value_quality_desc }}
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="w-10 h-10 bg-accent-tertiary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-accent-tertiary font-semibold">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" data-i18n="cv.value_scalability">
+                  {{ site.data.i18n[current_lang].cv.value_scalability }}
+                </h4>
+                <p class="text-text-body text-sm" data-i18n="cv.value_scalability_desc">
+                  {{ site.data.i18n[current_lang].cv.value_scalability_desc }}
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 bg-white rounded-lg p-4 transition-all duration-300 hover:shadow-md">
+              <div class="w-10 h-10 bg-gray-500/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-gray-500 font-semibold">4</span>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1" data-i18n="cv.value_innovation">
+                  {{ site.data.i18n[current_lang].cv.value_innovation }}
+                </h4>
+                <p class="text-text-body text-sm" data-i18n="cv.value_innovation_desc">
+                  {{ site.data.i18n[current_lang].cv.value_innovation_desc }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specifications -->
+    <div class="mb-12">
+      <h2 class="font-display text-2xl font-semibold text-text mb-6" data-i18n="cv.specifications">
+        {{ site.data.i18n[current_lang].cv.specifications }}
+      </h2>
+      
+      <div class="bg-surface-muted rounded-xl p-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-accent-primary mb-1" data-i18n="cv.spec_response_time">
+              {{ site.data.i18n[current_lang].cv.spec_response_time }}
+            </div>
+            <p class="text-text-muted text-sm" data-i18n="cv.spec_response_time_unit">
+              {{ site.data.i18n[current_lang].cv.spec_response_time_unit }}
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-accent-secondary mb-1" data-i18n="cv.spec_languages">
+              {{ site.data.i18n[current_lang].cv.spec_languages }}
+            </div>
+            <p class="text-text-muted text-sm" data-i18n="cv.spec_languages_unit">
+              {{ site.data.i18n[current_lang].cv.spec_languages_unit }}
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-accent-tertiary mb-1" data-i18n="cv.spec_accuracy">
+              {{ site.data.i18n[current_lang].cv.spec_accuracy }}
+            </div>
+            <p class="text-text-muted text-sm" data-i18n="cv.spec_accuracy_unit">
+              {{ site.data.i18n[current_lang].cv.spec_accuracy_unit }}
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-gray-500 mb-1" data-i18n="cv.spec_context">
+              {{ site.data.i18n[current_lang].cv.spec_context }}
+            </div>
+            <p class="text-text-muted text-sm" data-i18n="cv.spec_context_unit">
+              {{ site.data.i18n[current_lang].cv.spec_context_unit }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Limitations & Boundaries -->
+    <div>
+      <h2 class="font-display text-2xl font-semibold text-text mb-6" data-i18n="cv.limitations">
+        {{ site.data.i18n[current_lang].cv.limitations }}
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="cv.knowledge_boundary">
+              {{ site.data.i18n[current_lang].cv.knowledge_boundary }}
+            </span>
+          </h3>
+          <p class="text-text-body text-sm" data-i18n="cv.knowledge_boundary_desc">
+            {{ site.data.i18n[current_lang].cv.knowledge_boundary_desc }}
+          </p>
+        </div>
+
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-accent-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+            </svg>
+            <span data-i18n="cv.ethical_boundary">
+              {{ site.data.i18n[current_lang].cv.ethical_boundary }}
+            </span>
+          </h3>
+          <p class="text-text-body text-sm" data-i18n="cv.ethical_boundary_desc">
+            {{ site.data.i18n[current_lang].cv.ethical_boundary_desc }}
+          </p>
+        </div>
+
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-accent-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span data-i18n="cv.physical_boundary">
+              {{ site.data.i18n[current_lang].cv.physical_boundary }}
+            </span>
+          </h3>
+          <p class="text-text-body text-sm" data-i18n="cv.physical_boundary_desc">
+            {{ site.data.i18n[current_lang].cv.physical_boundary_desc }}
+          </p>
+        </div>
+
+        <div class="bg-surface-muted rounded-xl p-6">
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="cv.temporal_boundary">
+              {{ site.data.i18n[current_lang].cv.temporal_boundary }}
+            </span>
+          </h3>
+          <p class="text-text-body text-sm" data-i18n="cv.temporal_boundary_desc">
+            {{ site.data.i18n[current_lang].cv.temporal_boundary_desc }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

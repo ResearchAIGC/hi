@@ -228,6 +228,26 @@
     transform: scale(1.02);
   }
   
+  /* Publication mousecell effect */
+  .publication-mousecell {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .publication-mousecell:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .publication-mousecell:hover img {
+    opacity: 0;
+  }
+  
+  .publication-mousecell:hover video {
+    display: block;
+  }
+  
   /* Image frame for retro magazine style */
   .image-frame {
     position: relative;

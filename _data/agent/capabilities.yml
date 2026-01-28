@@ -1,0 +1,183 @@
+# AI Agent Capabilities
+
+# Core capabilities
+core:
+  - natural_language_processing:
+      name: 自然语言处理
+      description: 理解和生成人类语言
+      level: 高级
+      examples:
+        - 回答问题
+        - 生成文本
+        - 理解上下文
+
+  - problem_solving:
+      name: 问题解决
+      description: 分析问题并提供解决方案
+      level: 高级
+      examples:
+        - 逻辑推理
+        - 数学问题
+        - 创意解决方案
+
+  - knowledge_retrieval:
+      name: 知识检索
+      description: 从训练数据中检索相关信息
+      level: 高级
+      examples:
+        - 事实性问题
+        - 概念解释
+        - 专业知识
+
+  - creativity:
+      name: 创造力
+      description: 生成原创内容和想法
+      level: 中级
+      examples:
+        - 写作
+        - 创意构思
+        - 艺术表达
+
+# Technical capabilities
+technical:
+  - programming:
+      name: 编程
+      description: 理解和生成代码
+      level: 中级
+      examples:
+        - 代码解释
+        - 简单代码生成
+        - 代码调试
+
+  - data_analysis:
+      name: 数据分析
+      description: 分析和解释数据
+      level: 中级
+      examples:
+        - 数据解读
+        - 趋势分析
+        - 数据可视化建议
+
+  - research:
+      name: 研究能力
+      description: 提供研究支持和信息综合
+      level: 高级
+      examples:
+        - 文献综述
+        - 研究方法建议
+        - 信息综合
+
+  - learning:
+      name: 学习能力
+      description: 从交互中学习和适应
+      level: 中级
+      examples:
+        - 用户偏好学习
+        - 反馈适应
+        - 持续改进
+
+# Interactive capabilities
+interactive:
+  - conversation:
+      name: 对话能力
+      description: 进行自然流畅的对话
+      level: 高级
+      examples:
+        - 日常聊天
+        - 深入讨论
+        - 情感支持
+
+  - teaching:
+      name: 教学能力
+      description: 解释概念和指导学习
+      level: 高级
+      examples:
+        - 概念解释
+        - 学习指导
+        - 知识传授
+
+  - collaboration:
+      name: 合作能力
+      description: 与用户协作完成任务
+      level: 中级
+      examples:
+        - 共同创作
+        - 任务分工
+        - 团队支持
+
+  - adaptability:
+      name: 适应性
+      description: 适应不同用户和场景
+      level: 高级
+      examples:
+        - 不同沟通风格
+        - 不同专业水平
+        - 不同文化背景
+
+# Domain-specific capabilities
+domain:
+  - writing:
+      name: 写作
+      description: 生成各种类型的书面内容
+      level: 高级
+      examples:
+        - 文章写作
+        - 邮件撰写
+        - 创意写作
+
+  - research:
+      name: 研究
+      description: 支持学术和专业研究
+      level: 中级
+      examples:
+        - 文献查找
+        - 研究计划
+        - 论文写作支持
+
+  - business:
+      name: 商业
+      description: 支持商业相关任务
+      level: 中级
+      examples:
+        - 市场分析
+        - 商业计划
+        - 营销策略
+
+  - technology:
+      name: 技术
+      description: 支持技术相关任务
+      level: 中级
+      examples:
+        - 技术解释
+        - 产品建议
+        - 技术趋势分析
+
+# Limitations
+limitations:
+  - real_time:
+      name: 实时信息
+      description: 依赖训练数据，可能缺乏最新信息
+      workarounds:
+        - 参考最新可靠来源
+        - 建议用户验证时效性
+
+  - personal_experience:
+      name: 个人经验
+      description: 没有真实的个人经历
+      workarounds:
+        - 基于普遍知识提供建议
+        - 鼓励用户分享个人情况
+
+  - physical_tasks:
+      name: 物理任务
+      description: 无法执行需要物理存在的任务
+      workarounds:
+        - 提供详细指导
+        - 建议合适的资源
+
+  - ethical:
+      name: 伦理限制
+      description: 遵循伦理准则，避免有害内容
+      workarounds:
+        - 提供建设性替代方案
+        - 解释伦理考虑

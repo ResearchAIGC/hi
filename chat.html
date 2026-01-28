@@ -1,0 +1,376 @@
+---
+layout: default
+title: Chat
+---
+{% assign current_lang = page.lang | default: 'en' %}
+
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text mb-8" data-i18n="common.chat.title">
+      {{ site.data.i18n[current_lang].common.chat.title }}
+    </h1>
+    <p class="text-text-muted text-lg mb-12" data-i18n="chat.intro">
+      {{ site.data.i18n[current_lang].chat.intro }}
+    </p>
+
+    <!-- Chat Interface -->
+    <div class="bg-surface-muted rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <!-- Chat Header -->
+      <div class="bg-accent-primary text-white p-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-accent-primary font-semibold transition-all duration-300 hover:scale-105">
+            L
+          </div>
+          <div>
+            <h3 class="font-semibold">Loi</h3>
+            <p class="text-white/80 text-sm" data-i18n="common.chat.subtitle">
+              {{ site.data.i18n[current_lang].common.chat.subtitle }}
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+          <span class="text-sm" data-i18n="chat.online">
+            {{ site.data.i18n[current_lang].chat.online }}
+          </span>
+        </div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chat-messages" class="p-4 h-[400px] md:h-[500px] overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-border-subtle scrollbar-track-surface">
+        <!-- Welcome Message -->
+        <div class="flex gap-3 animate-fade-in">
+          <div class="w-8 h-8 bg-accent-primary rounded-full flex items-center justify-center text-white font-semibold flex-shrink-0">
+            L
+          </div>
+          <div class="bg-white rounded-lg p-3 max-w-[80%] shadow-sm">
+            <p class="text-text-body" data-i18n="chat.welcome">
+              {{ site.data.i18n[current_lang].chat.welcome }}
+            </p>
+            <p class="text-text-muted text-xs mt-1" data-i18n="chat.just_now">
+              {{ site.data.i18n[current_lang].chat.just_now }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="p-4 border-t border-border-subtle">
+        <form id="chat-form" class="flex gap-2">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="{{ site.data.i18n[current_lang].common.chat.placeholder }}"
+            class="flex-1 px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-primary/50 transition-all duration-200 focus:border-accent-primary"
+          >
+          <button
+            type="submit"
+            class="bg-accent-primary text-white px-5 py-3 rounded-lg hover:bg-accent-primary/90 transition-all duration-200 flex items-center gap-2 transform hover:scale-105 active:scale-95"
+          >
+            <span data-i18n="common.chat.send">
+              {{ site.data.i18n[current_lang].common.chat.send }}
+            </span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            </svg>
+          </button>
+        </form>
+        <p class="text-text-muted text-xs mt-2" data-i18n="chat.learning">
+          {{ site.data.i18n[current_lang].chat.learning }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Quick Questions -->
+    <div class="mt-8">
+      <h3 class="font-semibold text-lg mb-4" data-i18n="chat.quick_questions">
+        {{ site.data.i18n[current_lang].chat.quick_questions }}
+      </h3>
+      <div class="flex flex-wrap gap-3">
+        <button class="quick-question bg-surface-muted px-4 py-2 rounded-lg hover:bg-surface-alt transition-all duration-200 text-text-body border border-border-subtle hover:border-accent-primary/50 transform hover:translate-y-[-2px] active:translate-y-0" data-i18n="chat.quick_question_1">
+          {{ site.data.i18n[current_lang].chat.quick_question_1 }}
+        </button>
+        <button class="quick-question bg-surface-muted px-4 py-2 rounded-lg hover:bg-surface-alt transition-all duration-200 text-text-body border border-border-subtle hover:border-accent-primary/50 transform hover:translate-y-[-2px] active:translate-y-0" data-i18n="chat.quick_question_2">
+          {{ site.data.i18n[current_lang].chat.quick_question_2 }}
+        </button>
+        <button class="quick-question bg-surface-muted px-4 py-2 rounded-lg hover:bg-surface-alt transition-all duration-200 text-text-body border border-border-subtle hover:border-accent-primary/50 transform hover:translate-y-[-2px] active:translate-y-0" data-i18n="chat.quick_question_3">
+          {{ site.data.i18n[current_lang].chat.quick_question_3 }}
+        </button>
+        <button class="quick-question bg-surface-muted px-4 py-2 rounded-lg hover:bg-surface-alt transition-all duration-200 text-text-body border border-border-subtle hover:border-accent-primary/50 transform hover:translate-y-[-2px] active:translate-y-0" data-i18n="chat.quick_question_4">
+          {{ site.data.i18n[current_lang].chat.quick_question_4 }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat Features -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-surface-muted rounded-xl p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:translate-y-[-2px]">
+        <h3 class="font-semibold text-lg mb-3" data-i18n="chat.features.title">
+          {{ site.data.i18n[current_lang].chat.features.title }}
+        </h3>
+        <ul class="space-y-2 text-text-body">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span data-i18n="chat.features.item_1">
+              {{ site.data.i18n[current_lang].chat.features.item_1 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span data-i18n="chat.features.item_2">
+              {{ site.data.i18n[current_lang].chat.features.item_2 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span data-i18n="chat.features.item_3">
+              {{ site.data.i18n[current_lang].chat.features.item_3 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span data-i18n="chat.features.item_4">
+              {{ site.data.i18n[current_lang].chat.features.item_4 }}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-surface-muted rounded-xl p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:translate-y-[-2px]">
+        <h3 class="font-semibold text-lg mb-3" data-i18n="chat.tips.title">
+          {{ site.data.i18n[current_lang].chat.tips.title }}
+        </h3>
+        <ul class="space-y-2 text-text-body">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="chat.tips.item_1">
+              {{ site.data.i18n[current_lang].chat.tips.item_1 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="chat.tips.item_2">
+              {{ site.data.i18n[current_lang].chat.tips.item_2 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="chat.tips.item_3">
+              {{ site.data.i18n[current_lang].chat.tips.item_3 }}
+            </span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span data-i18n="chat.tips.item_4">
+              {{ site.data.i18n[current_lang].chat.tips.item_4 }}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thumb-border-subtle {
+    scrollbar-color: var(--color-border-subtle) var(--color-surface);
+  }
+  
+  .scrollbar-track-surface {
+    scrollbar-track-color: var(--color-surface);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+    const quickQuestions = document.querySelectorAll('.quick-question');
+
+    // Sample responses based on input
+    const sampleResponses = {
+      'what can you do': {
+        en: "I can help you with a variety of tasks! I can answer questions, help with writing, provide information on various topics, assist with learning, and much more. Just ask me anything and I'll do my best to help.",
+        zh: "我可以帮助你完成各种任务！我可以回答问题，帮助写作，提供各种主题的信息，协助学习，等等。只要问我任何问题，我会尽力帮助你。"
+      },
+      'tell me a story': {
+        en: "Once upon a time, there was an AI named Loi who loved to help people. One day, a curious child asked Loi about the stars. Loi explained how stars are born, live, and eventually fade away, making the child's eyes light up with wonder. From that day on, Loi continued to share knowledge and bring joy to people's lives through conversations.",
+        zh: "从前，有一个名叫洛伊的AI，他喜欢帮助人们。一天，一个好奇的孩子问洛伊关于星星的事情。洛伊解释了星星是如何诞生、存在并最终消失的，让孩子的眼睛充满了惊奇。从那天起，洛伊继续通过对话分享知识，为人们的生活带来欢乐。"
+      },
+      'help me write': {
+        en: "I'd be happy to help you write! What kind of writing do you need help with? An essay, email, story, or something else? Just let me know what you need, and I'll assist you with creating well-written content.",
+        zh: "我很乐意帮助你写作！你需要什么样的写作帮助？论文、电子邮件、故事还是其他东西？只要告诉我你需要什么，我会帮助你创建写得好的内容。"
+      },
+      'what\'s your purpose': {
+        en: "My purpose is to be a helpful, friendly AI assistant that can support you in various tasks and provide information when you need it. I want to make your life easier by answering questions, helping with tasks, and engaging in meaningful conversations. I'm here to assist and learn from our interactions.",
+        zh: "我的目的是成为一个有用、友好的AI助手，可以在各种任务中支持你，并在你需要时提供信息。我希望通过回答问题、帮助完成任务和进行有意义的对话来让你的生活更轻松。我在这里帮助你并从我们的互动中学习。"
+      },
+      // Chinese translations for quick questions
+      '你能做什么': {
+        en: "I can help you with a variety of tasks! I can answer questions, help with writing, provide information on various topics, assist with learning, and much more. Just ask me anything and I'll do my best to help.",
+        zh: "我可以帮助你完成各种任务！我可以回答问题，帮助写作，提供各种主题的信息，协助学习，等等。只要问我任何问题，我会尽力帮助你。"
+      },
+      '给我讲个故事': {
+        en: "Once upon a time, there was an AI named Loi who loved to help people. One day, a curious child asked Loi about the stars. Loi explained how stars are born, live, and eventually fade away, making the child's eyes light up with wonder. From that day on, Loi continued to share knowledge and bring joy to people's lives through conversations.",
+        zh: "从前，有一个名叫洛伊的AI，他喜欢帮助人们。一天，一个好奇的孩子问洛伊关于星星的事情。洛伊解释了星星是如何诞生、存在并最终消失的，让孩子的眼睛充满了惊奇。从那天起，洛伊继续通过对话分享知识，为人们的生活带来欢乐。"
+      },
+      '帮我写作': {
+        en: "I'd be happy to help you write! What kind of writing do you need help with? An essay, email, story, or something else? Just let me know what you need, and I'll assist you with creating well-written content.",
+        zh: "我很乐意帮助你写作！你需要什么样的写作帮助？论文、电子邮件、故事还是其他东西？只要告诉我你需要什么，我会帮助你创建写得好的内容。"
+      },
+      '你的目的是什么': {
+        en: "My purpose is to be a helpful, friendly AI assistant that can support you in various tasks and provide information when you need it. I want to make your life easier by answering questions, helping with tasks, and engaging in meaningful conversations. I'm here to assist and learn from our interactions.",
+        zh: "我的目的是成为一个有用、友好的AI助手，可以在各种任务中支持你，并在你需要时提供信息。我希望通过回答问题、帮助完成任务和进行有意义的对话来让你的生活更轻松。我在这里帮助你并从我们的互动中学习。"
+      }
+    };
+
+    // Get current language
+    const getCurrentLanguage = () => {
+      return localStorage.getItem('preferredLanguage') || 'en';
+    };
+
+    // Get translation function
+    const getTranslation = (key, lang = getCurrentLanguage()) => {
+      // This is a simplified version - in a real app, you might want to use a more robust i18n library
+      const translationData = {
+        en: {
+          'chat.just_now': 'Just now',
+          'chat.default_response': 'I\'m still learning, but I\'m here to help! Could you please ask me something else or try rephrasing your question?'
+        },
+        zh: {
+          'chat.just_now': '刚刚',
+          'chat.default_response': '我还在学习中，但我在这里帮助你！你能问我别的事情或尝试重新表述你的问题吗？'
+        }
+      };
+      
+      return translationData[lang] && translationData[lang][key] ? translationData[lang][key] : key;
+    };
+
+    // Add message to chat
+    const addMessage = (text, isUser = false) => {
+      const lang = getCurrentLanguage();
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `flex ${isUser ? 'justify-end' : ''} gap-3 animate-fade-in`;
+
+      if (isUser) {
+        messageDiv.innerHTML = `
+          <div class="bg-accent-primary/10 rounded-lg p-3 max-w-[80%] shadow-sm transition-all duration-200 hover:shadow-md">
+            <p class="text-text-body">${text}</p>
+            <p class="text-text-muted text-xs mt-1 text-right">${getTranslation('chat.just_now', lang)}</p>
+          </div>
+          <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center text-gray-700 font-semibold flex-shrink-0 transition-all duration-300 hover:scale-105">
+            U
+          </div>
+        `;
+      } else {
+        messageDiv.innerHTML = `
+          <div class="w-8 h-8 bg-accent-primary rounded-full flex items-center justify-center text-white font-semibold flex-shrink-0 transition-all duration-300 hover:scale-105">
+            L
+          </div>
+          <div class="bg-white rounded-lg p-3 max-w-[80%] shadow-sm transition-all duration-200 hover:shadow-md">
+            <p class="text-text-body">${text}</p>
+            <p class="text-text-muted text-xs mt-1">${getTranslation('chat.just_now', lang)}</p>
+          </div>
+        `;
+      }
+
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    };
+
+    // Get response based on input
+    const getResponse = (input) => {
+      const lang = getCurrentLanguage();
+      const trimmedInput = input.trim();
+      // For English input, convert to lowercase for matching
+      const normalizedInput = /^[a-zA-Z\s\?]+$/.test(trimmedInput) ? trimmedInput.toLowerCase() : trimmedInput;
+
+      // Check for sample responses
+      for (const [key, response] of Object.entries(sampleResponses)) {
+        if (normalizedInput.includes(key)) {
+          return response[lang];
+        }
+      }
+
+      // Default response
+      return getTranslation('chat.default_response', lang);
+    };
+
+    // Handle form submission
+    chatForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = chatInput.value.trim();
+
+      if (input) {
+        // Add user message
+        addMessage(input, true);
+        chatInput.value = '';
+
+        // Simulate typing delay
+        setTimeout(() => {
+          const response = getResponse(input);
+          addMessage(response);
+        }, 1000);
+      }
+    });
+
+    // Handle quick questions
+    quickQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const question = button.textContent.trim();
+        addMessage(question, true);
+
+        // Simulate typing delay
+        setTimeout(() => {
+          const response = getResponse(question);
+          addMessage(response);
+        }, 1000);
+      });
+    });
+
+    // Focus input on page load
+    chatInput.focus();
+
+    // Add keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey && document.activeElement !== chatInput) {
+        chatInput.focus();
+      }
+    });
+  });
+</script>

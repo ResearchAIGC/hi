@@ -1,14 +1,20 @@
 ---
 layout: default
-title: Blog
+title: Stories
 ---
 {% assign current_lang = page.lang | default: 'en' %}
 
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
-    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text mb-8" data-i18n="common.blog">
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text mb-4" data-i18n="common.blog">
       {{ site.data.i18n[current_lang].common.blog }}
     </h1>
+    <p class="text-text-muted text-lg mb-2" data-i18n="blog.subtitle">
+      {{ site.data.i18n[current_lang].blog.subtitle }}
+    </p>
+    <p class="text-text-muted text-lg mb-12" data-i18n="blog.intro">
+      {{ site.data.i18n[current_lang].blog.intro }}
+    </p>
 
     <div id="blog-posts-container">
       {% for post in site.posts %}
@@ -49,6 +55,111 @@ title: Blog
         </div>
       </div>
       {% endfor %}
+    </div>
+
+    <!-- AI Agent Stories Section -->
+    <div class="mt-16">
+      <h2 class="font-display text-2xl font-semibold text-text mb-6" data-i18n="blog.journey_stories">
+        {{ site.data.i18n[current_lang].blog.journey_stories }}
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Origin Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_origin">
+            {{ site.data.i18n[current_lang].blog.story_origin }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_origin_desc">
+            {{ site.data.i18n[current_lang].blog.story_origin_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- First Conversation Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_first_conversation">
+            {{ site.data.i18n[current_lang].blog.story_first_conversation }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_first_conversation_desc">
+            {{ site.data.i18n[current_lang].blog.story_first_conversation_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Problem Solving Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_problem_solving">
+            {{ site.data.i18n[current_lang].blog.story_problem_solving }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_problem_solving_desc">
+            {{ site.data.i18n[current_lang].blog.story_problem_solving_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Growth Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_growth">
+            {{ site.data.i18n[current_lang].blog.story_growth }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_growth_desc">
+            {{ site.data.i18n[current_lang].blog.story_growth_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Cultural Exchange Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_cultural_exchange">
+            {{ site.data.i18n[current_lang].blog.story_cultural_exchange }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_cultural_exchange_desc">
+            {{ site.data.i18n[current_lang].blog.story_cultural_exchange_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Creative Collaboration Story -->
+        <div class="bg-surface-muted rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+          <h3 class="font-semibold text-xl mb-3" data-i18n="blog.story_creative_collaboration">
+            {{ site.data.i18n[current_lang].blog.story_creative_collaboration }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="blog.story_creative_collaboration_desc">
+            {{ site.data.i18n[current_lang].blog.story_creative_collaboration_desc }}
+          </p>
+          <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+            <span data-i18n="blog.learn_more">{{ site.data.i18n[current_lang].blog.learn_more }}</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div id="no-posts-message" class="hidden" data-i18n="blog.no_posts"></div>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your Name
+title: Loi - AI Assistant
 ---
 {% assign current_lang = page.lang | default: 'en' %}
 
@@ -63,6 +63,116 @@ title: Your Name
           {{ site.data.i18n[current_lang].home.description | markdownify }}
         </div>
 
+        <!-- Interactive Introduction Section -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-border-subtle shadow-sm">
+          <h3 class="font-semibold text-xl mb-4" data-i18n="home.title">
+            {{ site.data.i18n[current_lang].home.title }}
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+              <div>
+                <h4 class="font-medium" data-i18n="home.research_focus">
+                  {{ site.data.i18n[current_lang].home.research_focus }}
+                </h4>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              <div>
+                <h4 class="font-medium" data-i18n="home.recent_work">
+                  {{ site.data.i18n[current_lang].home.recent_work }}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Touch Section -->
+        <div class="space-y-6 mt-6">
+          <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-border-subtle shadow-sm">
+            <h3 class="font-semibold text-xl mb-6" data-i18n="home.personal_touch.title">
+              {{ site.data.i18n[current_lang].home.personal_touch.title }}
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-muted transition-colors duration-200">
+                <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <div class="flex-1">
+                  <h4 class="font-medium mb-2" data-i18n="home.personal_touch.interest">
+                    {{ site.data.i18n[current_lang].home.personal_touch.interest }}
+                  </h4>
+                  <p class="text-text-muted text-sm" data-i18n="home.personal_touch.interest_desc">
+                    {{ site.data.i18n[current_lang].home.personal_touch.interest_desc }}
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-muted transition-colors duration-200">
+                <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="flex-1">
+                  <h4 class="font-medium mb-2" data-i18n="home.personal_touch.quirk">
+                    {{ site.data.i18n[current_lang].home.personal_touch.quirk }}
+                  </h4>
+                  <p class="text-text-muted text-sm" data-i18n="home.personal_touch.quirk_desc">
+                    {{ site.data.i18n[current_lang].home.personal_touch.quirk_desc }}
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-muted transition-colors duration-200">
+                <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+                <div class="flex-1">
+                  <h4 class="font-medium mb-2" data-i18n="home.personal_touch.hobby">
+                    {{ site.data.i18n[current_lang].home.personal_touch.hobby }}
+                  </h4>
+                  <p class="text-text-muted text-sm" data-i18n="home.personal_touch.hobby_desc">
+                    {{ site.data.i18n[current_lang].home.personal_touch.hobby_desc }}
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-lg hover:bg-surface-muted transition-colors duration-200">
+                <svg class="w-5 h-5 text-accent-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="flex-1">
+                  <h4 class="font-medium mb-2" data-i18n="home.personal_touch.secret">
+                    {{ site.data.i18n[current_lang].home.personal_touch.secret }}
+                  </h4>
+                  <p class="text-text-muted text-sm" data-i18n="home.personal_touch.secret_desc">
+                    {{ site.data.i18n[current_lang].home.personal_touch.secret_desc }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Prompt Section -->
+        <div class="bg-gradient-to-r from-accent-primary/10 to-accent-secondary/10 rounded-xl p-6 border border-accent-primary/20 shadow-sm mt-6">
+          <h3 class="font-semibold text-lg mb-4" data-i18n="footer.get_in_touch">
+            {{ site.data.i18n[current_lang].footer.get_in_touch }}
+          </h3>
+          <p class="text-text-body mb-4" data-i18n="home.prompt.description">
+            {{ site.data.i18n[current_lang].home.prompt.description }}
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="{{ '/chat/' | relative_url }}" class="inline-flex items-center px-4 py-2 bg-accent-primary text-white font-medium rounded-lg shadow hover:bg-accent-primary/90 hover:shadow-md transition-all duration-200">
+              {% include icons/envelope.html class="w-4 h-4 mr-2" %} <span data-i18n="home.prompt.start_chatting">{{ site.data.i18n[current_lang].home.prompt.start_chatting }}</span>
+            </a>
+            <a href="{{ '/cv/' | relative_url }}" class="inline-flex items-center px-4 py-2 bg-white text-accent-primary font-medium rounded-lg shadow border border-accent-primary/30 hover:bg-surface-alt transition-all duration-200">
+              {% include icons/file.html class="w-4 h-4 mr-2" %} {{ site.data.i18n[current_lang].home.view_cv }}
+            </a>
+          </div>
+        </div>
+
         <!-- Strategic button layout -->
         <div class="flex flex-wrap gap-4">
           <a
@@ -75,19 +185,19 @@ title: Your Name
 
           <div class="flex gap-3">
             <a
-              href="https://d.wanfangdata.com.cn/thesis/{{ site.my_scholar }}"
-              class="inline-flex items-center justify-center w-12 h-12 bg-white border border-border rounded-full shadow-md hover:bg-surface-alt hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
-              aria-label="Google Scholar"
-            >
-              <i class="ai ai-google-scholar text-xl"></i>
-            </a>
-
-            <a
               href="https://github.com/{{ site.github_username }}"
               class="inline-flex items-center justify-center w-12 h-12 bg-white border border-border rounded-full shadow-md hover:bg-surface-alt hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
               aria-label="GitHub"
             >
               {% include icons/github.html class="w-5 h-5" %}
+            </a>
+
+            <a
+              href="mailto:{{ site.email }}"
+              class="inline-flex items-center justify-center w-12 h-12 bg-white border border-border rounded-full shadow-md hover:bg-surface-alt hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+              aria-label="Email"
+            >
+              {% include icons/envelope.html class="w-5 h-5" %}
             </a>
           </div>
         </div>
@@ -124,8 +234,235 @@ title: Your Name
   </div>
 </section>
 
-<!-- Publications Section -->
+<!-- Capabilities Preview Section -->
 <section class="py-16 md:py-28 bg-surface-muted relative">
+  <!-- Subtle section divider -->
+  <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-subtle to-transparent"></div>
+  
+  <div class="max-w-5xl mx-auto px-6">
+    <!-- Section header with enhanced visual hierarchy -->
+    <div class="mb-16">
+      <h2 class="font-display text-3xl md:text-5xl font-semibold text-text mb-4 relative inline-block" data-i18n="cv.title">
+        {{ site.data.i18n[current_lang].cv.title }}
+        <span class="absolute -bottom-3 left-0 w-20 h-0.5 bg-accent-primary"></span>
+      </h2>
+      <p class="text-text-muted text-lg max-w-3xl" data-i18n="home.capabilities_preview.description">
+        {{ site.data.i18n[current_lang].home.capabilities_preview.description }}
+      </p>
+    </div>
+
+    <!-- Capabilities preview -->
+    <div class="capabilities-preview grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Core capabilities -->
+      <div class="core-capabilities bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-border-subtle hover:-translate-y-2">
+        <div class="flex items-center gap-3 mb-4">
+          <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <h3 class="font-semibold text-xl" data-i18n="home.capabilities_preview.core_capabilities.title">
+            {{ site.data.i18n[current_lang].home.capabilities_preview.core_capabilities.title }}
+          </h3>
+        </div>
+        <ul class="space-y-3 text-text-body">
+          <!-- English items -->
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Natural Language Processing</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Critical Thinking</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Knowledge Synthesis</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Creative Problem Solving</span>
+          </li>
+          
+          <!-- Chinese items -->
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>自然语言处理</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>批判性思维</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>知识综合</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>创造性问题解决</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Interactive capabilities -->
+      <div class="interactive-abilities bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-border-subtle hover:-translate-y-2">
+        <div class="flex items-center gap-3 mb-4">
+          <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+          <h3 class="font-semibold text-xl" data-i18n="home.capabilities_preview.interactive_abilities.title">
+            {{ site.data.i18n[current_lang].home.capabilities_preview.interactive_abilities.title }}
+          </h3>
+        </div>
+        <ul class="space-y-3 text-text-body">
+          <!-- English items -->
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Conversational Intelligence</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Adaptive Teaching</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Collaborative Problem Solving</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Emotional Intelligence</span>
+          </li>
+          
+          <!-- Chinese items -->
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>对话智能</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>适应性教学</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>协作问题解决</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>情商</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Domain expertise -->
+      <div class="domain-expertise bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-border-subtle hover:-translate-y-2">
+        <div class="flex items-center gap-3 mb-4">
+          <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+          </svg>
+          <h3 class="font-semibold text-xl" data-i18n="home.capabilities_preview.domain_expertise.title">
+            {{ site.data.i18n[current_lang].home.capabilities_preview.domain_expertise.title }}
+          </h3>
+        </div>
+        <ul class="space-y-3 text-text-body">
+          <!-- English items -->
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Creative Writing</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Research & Analysis</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Strategic Planning</span>
+          </li>
+          <li class="capability-item capability-en flex items-center gap-3">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Technological Innovation</span>
+          </li>
+          
+          <!-- Chinese items -->
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>创意写作</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>研究与分析</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>战略规划</span>
+          </li>
+          <li class="capability-item capability-zh flex items-center gap-3 hidden">
+            <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>技术创新</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- View all capabilities link -->
+    <div class="text-center mt-16">
+      <a href="{{ '/cv/' | relative_url }}" class="inline-flex items-center px-6 py-3 bg-accent-primary text-white font-medium rounded-lg shadow-lg hover:bg-accent-primary/90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <span data-i18n="home.capabilities_preview.explore_all">{{ site.data.i18n[current_lang].home.capabilities_preview.explore_all }}</span>
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Publications Section -->
+<section class="py-16 md:py-28 bg-white relative">
   <!-- Subtle section divider -->
   <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border-subtle to-transparent"></div>
   
@@ -141,19 +478,19 @@ title: Your Name
       </p>
     </div>
 
-    <!-- Enhanced publications layout -->
-    <div class="space-y-6">
-      {% for pub in site.data.publications %}
-      <div class="publication-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-border-subtle hover:-translate-y-1">
-        {% include publication.html pub=pub %}
-      </div>
+    <!-- Publications grid -->
+    <div class="grid grid-cols-1 gap-8">
+      {% for pub in site.data.publications limit: 5 %}
+        <div class="publication-item border-b border-border-subtle pb-8 last:border-0 last:pb-0">
+          {% include publication.html pub=pub %}
+        </div>
       {% endfor %}
     </div>
-    
-    <!-- View all publications link -->
+
+    <!-- View all link -->
     <div class="text-center mt-12">
-      <a href="#" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
-        <span data-i18n="publication.view_all">View all publications</span>
+      <a href="{{ '/publications/' | relative_url }}" class="inline-flex items-center text-accent-primary font-medium hover:text-accent-primary/90 transition-colors duration-200">
+        <span data-i18n="publication.view_all">{{ site.data.i18n[current_lang].publication.view_all }}</span>
         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
         </svg>
