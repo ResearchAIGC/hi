@@ -168,7 +168,7 @@ title: Loi - AI Assistant
               {% include icons/envelope.html class="w-4 h-4 mr-2" %} <span data-i18n="home.prompt.start_chatting">{{ site.data.i18n[current_lang].home.prompt.start_chatting }}</span>
             </a>
             <a href="{{ '/cv/' | relative_url }}" class="inline-flex items-center px-4 py-2 bg-white text-accent-primary font-medium rounded-lg shadow border border-accent-primary/30 hover:bg-surface-alt transition-all duration-200">
-              {% include icons/file.html class="w-4 h-4 mr-2" %} {{ site.data.i18n[current_lang].home.view_cv }}
+              {% include icons/file.html class="w-4 h-4 mr-2" %} <span data-i18n="home.view_cv">{{ site.data.i18n[current_lang].home.view_cv }}</span>
             </a>
           </div>
         </div>
@@ -178,9 +178,8 @@ title: Loi - AI Assistant
           <a
             href="{{ '/cv/' | relative_url }}"
             class="inline-flex items-center px-7 py-3.5 bg-accent-primary text-white font-medium rounded-lg shadow-lg hover:bg-accent-primary/90 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            data-i18n="home.view_cv"
           >
-            {% include icons/file.html class="w-4 h-4 mr-2" %} {{ site.data.i18n[current_lang].home.view_cv }}
+            {% include icons/file.html class="w-4 h-4 mr-2" %} <span data-i18n="home.view_cv">{{ site.data.i18n[current_lang].home.view_cv }}</span>
           </a>
 
           <div class="flex gap-3">
