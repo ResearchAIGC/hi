@@ -296,39 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     
-    // Update capabilities preview section
-    if (window.location.pathname === '/' || window.location.pathname === '') {
-      console.log('Updating capabilities preview for language:', lang);
-      // Get all capabilities lists
-      const capabilitiesLists = document.querySelectorAll('[data-capabilities]');
-      console.log('Found capabilities lists:', capabilitiesLists.length);
-      
-      capabilitiesLists.forEach(list => {
-        const capabilityType = list.getAttribute('data-capabilities');
-        console.log('Processing capability type:', capabilityType);
-        const items = getTranslation(`home.capabilities_preview.${capabilityType}.items`, lang);
-        console.log('Got items:', items);
-        
-        if (items && Array.isArray(items)) {
-          console.log('Updating items for', capabilityType, ':', items);
-          // Clear existing items
-          list.innerHTML = '';
-          
-          // Add new items
-          items.forEach(item => {
-            const li = document.createElement('li');
-            li.className = 'flex items-center gap-3';
-            li.innerHTML = `
-              <svg class="w-5 h-5 text-accent-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>${item}</span>
-            `;
-            list.appendChild(li);
-          });
-        }
-      });
-    }
+
     
     // Update the lang attribute on the html tag
     document.documentElement.setAttribute('lang', lang);
@@ -371,21 +339,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Get translation from the global i18n object
   function getTranslation(key, lang) {
-    // Debug: Check window.i18n structure
-    console.log('Getting translation for key:', key, 'in lang:', lang);
-    console.log('Window i18n exists:', typeof window.i18n === 'object');
-    if (window.i18n) {
-      console.log('Available languages:', Object.keys(window.i18n));
-      if (window.i18n[lang]) {
-        console.log('Language data exists for:', lang);
-        console.log('Home data exists:', 'home' in window.i18n[lang]);
-        if (window.i18n[lang].home && window.i18n[lang].home.capabilities_preview) {
-          console.log('Capabilities preview data exists');
-          console.log('Core capabilities items:', window.i18n[lang].home.capabilities_preview.core_capabilities.items);
-        }
-      }
-    }
-    
     // Check if window.i18n is available (set by the template)
     if (typeof window.i18n === 'object' && window.i18n[lang]) {
       const keys = key.split('.');
@@ -395,7 +348,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (value && typeof value === 'object' && k in value) {
           value = value[k];
         } else {
-          console.log('Key not found:', k);
           return null;
         }
       }
@@ -420,11 +372,9 @@ document.addEventListener('DOMContentLoaded', function() {
         value = value.trim();
       }
       
-      console.log('Translation found:', value);
       return value;
     }
     
-    console.log('Translation not found');
     return null;
   }
 
